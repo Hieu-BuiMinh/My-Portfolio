@@ -1,0 +1,72 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@mantine/core": "^7.8.1",
+    "@mantine/hooks": "^7.8.1",
+    "@remixicon/react": "^4.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.6.8",
+    "canvas-confetti": "^1.9.2",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.1.7",
+    "json-server": "^1.0.0-alpha.23",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.2"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others \"json-server --watch data/db.json --port 8000\" \"react-scripts start\"",
+    "start": "react-scripts start",
+    "server": "json-server --watch data/db.json --port 8000",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "husky",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "lint-staged": "lint-staged --allow-empty"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "3.2.5",
+    "tailwindcss": "^3.4.3"
+  }
+}
