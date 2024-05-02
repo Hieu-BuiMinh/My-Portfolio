@@ -22,15 +22,15 @@ function MouseFollower() {
 			}, 170)
 		}
 
-    const handleMouseLeave = (event:MouseEvent)=>{
-      console.log(event)
-      setTimeout(() => {
+		const handleMouseLeave = (event: MouseEvent) => {
+			console.log(event)
+			setTimeout(() => {
 				if (dotRef.current && circleRef.current) {
 					dotRef.current.style.visibility = 'hidden'
-          circleRef.current.style.visibility = 'hidden'
+					circleRef.current.style.visibility = 'hidden'
 				}
 			}, 100)
-    }
+		}
 
 		window.addEventListener('mousemove', handleMouseMove)
 		window.addEventListener('mouseleave', handleMouseLeave)

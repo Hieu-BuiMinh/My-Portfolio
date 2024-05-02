@@ -47,7 +47,6 @@ function PorfolioView() {
 
 	return (
 		<div className="about-page">
-
 			<SegmentNav navData={navData} handlesetNavData={handlesetNavData} />
 
 			<section className="about-section" id="hello">

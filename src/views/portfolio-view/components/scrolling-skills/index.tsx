@@ -49,8 +49,8 @@ function ScrollingSkills() {
 					return (
 						<span className={`skill ${skill.isNew && 'new-skill'}`} key={randomId()}>
 							{skill.icon}
-							{skill.isNew&&<span className="text-white">{skill.lable}</span>}
-							{!skill.isNew&&<span className="text-[var(--color-surface-999)]">{skill.lable}</span>}
+							{skill.isNew && <span className="text-white">{skill.lable}</span>}
+							{!skill.isNew && <span className="text-[var(--color-surface-999)]">{skill.lable}</span>}
 						</span>
 					)
 				})}
@@ -60,8 +60,8 @@ function ScrollingSkills() {
 					return (
 						<span className={`skill ${skill.isNew && 'new-skill'}`} key={randomId()}>
 							{skill.icon}
-							{skill.isNew&&<span className="text-white">{skill.lable}</span>}
-							{!skill.isNew&&<span className="text-[var(--color-surface-999)]">{skill.lable}</span>}
+							{skill.isNew && <span className="text-white">{skill.lable}</span>}
+							{!skill.isNew && <span className="text-[var(--color-surface-999)]">{skill.lable}</span>}
 						</span>
 					)
 				})}
