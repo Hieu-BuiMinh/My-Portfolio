@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './global.css'
+import './css/global.css'
 import '@mantine/core/styles.css'
 import AppProvider from './components/provider'
 import AppRouterProvider from './components/provider/app-router-provider'

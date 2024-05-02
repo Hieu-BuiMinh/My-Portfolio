@@ -1,0 +1,18 @@
+:root[data-mantine-color-scheme="light"]{
+  --color-surface-100: #ffffff;
+  --color-surface-200: #e7e7e7;
+  --color-surface-300: #cdcdcd;
+  --color-surface-400: #b2b2b2;
+  --color-surface-500: #9a9a9a;
+  --color-surface-600: #777777;
+  --color-surface-700: #666666;
+  --color-surface-800: #555555;
+  --color-surface-900: #444444;
+  --color-surface-999: #333333;
+
+  --color-linear-gradient-skills-after: linear-gradient(90deg, #ffffff 40%, #ffffff00 100%);
+  --color-linear-gradient-skills-before: linear-gradient(90deg, #ffffff00 0%, #ffffff 60%);
+  
+  /* mouse follower */
+  --color-follower-dot: #078e8e;
+}

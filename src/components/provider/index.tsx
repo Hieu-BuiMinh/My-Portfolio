@@ -4,7 +4,7 @@ interface IAppProvider {
 	children: React.ReactNode
 }
 
-function AppProvider({ children }: IAppProvider) {
+function AppProvider({ children }: Readonly<IAppProvider>) {
 	return <AppMantineProvider>{children}</AppMantineProvider>
 }
 
