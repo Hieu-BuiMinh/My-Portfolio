@@ -16,7 +16,7 @@ function ToggleDarkModeBtn() {
 		<Switch
 			className="flex items-center justify-center rotate-90"
 			onChange={hanldeChangeTheme}
-			size="md"
+			size="sm"
 			color="#555555"
 			onLabel={<LightIcon />}
 			offLabel={<DarkIcon />}
@@ -27,8 +27,8 @@ function ToggleDarkModeBtn() {
 export default memo(ToggleDarkModeBtn)
 
 const LightIcon = () => {
-	return <RiSunLine size={15} color="#ffd43b" className="-rotate-45" />
+	return <RiSunLine size={13} color="#ffd43b" className="-rotate-45" />
 }
 const DarkIcon = () => {
-	return <RiMoonLine size={15} color="#228be6" className="-rotate-45" />
+	return <RiMoonLine size={13} color="#228be6" className="-rotate-45" />
 }

@@ -17,12 +17,15 @@
     "canvas-confetti": "^1.9.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.1.7",
+    "interactjs": "^1.10.27",
     "json-server": "^1.0.0-alpha.23",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-slot-counter": "^2.3.1",
+    "react-type-animation": "^3.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "zustand": "^4.5.2"
@@ -62,13 +65,12 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
+    "@types/webgi": "https://dist.pixotronics.com/webgi/runtime/bundle-types-0.9.8.tgz",
     "concurrently": "^8.2.2",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.2",
-    "postcss": "^8.4.38",
-    "postcss-preset-mantine": "^1.15.0",
-    "postcss-simple-vars": "^7.0.1",
     "prettier": "3.2.5",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "webgi": "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.8.tgz"
   }
 }

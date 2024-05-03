@@ -1,11 +1,16 @@
-import { useState } from 'react'
-import AboutHeader from './components/about-header'
+import { useEffect, useState } from 'react'
 import ScrollingSkills from './components/scrolling-skills'
+import AboutHeader from './components/sections/about-header'
 import SegmentNav from './components/segment-nav'
 
+import { useComputedColorScheme } from '@mantine/core'
+import StickyBall from './components/sticky-ball'
 import './css/style.css'
 
 function PorfolioView() {
+	const computedColorScheme = useComputedColorScheme('light')
+	const [style, setStyle] = useState({})
+
 	const [navData, setNavData] = useState({
 		value: '#hello',
 		data: [
@@ -45,9 +50,23 @@ function PorfolioView() {
 		})
 	}
 
+	useEffect(() => {
+		computedColorScheme === 'light'
+			? setStyle((prev) => {
+					//#DDDDDD === circle color
+					return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_light.svg)' }
+				})
+			: setStyle((prev) => {
+					//#5a5757 === circle color
+					return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_dark.svg)' }
+				})
+	}, [computedColorScheme])
+
 	return (
-		<div className="about-page">
+		<div className="about-page" style={style}>
 			<SegmentNav navData={navData} handlesetNavData={handlesetNavData} />
+
+			<StickyBall />
 
 			<section className="about-section" id="hello">
 				<AboutHeader />

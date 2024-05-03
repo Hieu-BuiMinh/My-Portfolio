@@ -35,18 +35,29 @@ function DownLoadCVButton() {
 		explodeConfetti()
 		setTimeout(() => {
 			setLoading(false)
-			toast.success('Thanks for downloading ☕')
+			toast.success('Thanks for downloading ☕', {
+				style: {
+					background: 'var(--color-surface-500)',
+					color: 'var(--color-surface-999)',
+					borderRadius: '30px',
+					fontSize: '13px',
+				},
+				position: 'bottom-left',
+				duration: 5000,
+			})
 		}, 3000)
 	}
+
 	return (
 		<a href="/assets/files/pdf/[Junior-Frontend]_[BuiMinhHieu].pdf" download>
 			<Button
 				onClick={handleloading}
 				fullWidth
-				variant="filled"
+				variant="gradient"
+				gradient={{ from: 'red', to: 'yellow', deg: 90 }}
 				size="xs"
 				radius="xl"
-				rightSection={<RiDownloadCloud2Line size={16} />}
+				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}
 				loading={loading}
 			>
 				Download CV

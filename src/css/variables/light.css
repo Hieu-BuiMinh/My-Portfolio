@@ -14,5 +14,9 @@
   --color-linear-gradient-skills-before: linear-gradient(90deg, #ffffff00 0%, #ffffff 60%);
   
   /* mouse follower */
-  --color-follower-dot: #078e8e;
+  --color-follower-dot: #59be23;
+  /* auth name */
+  --color-authname: #333333;
+  --color-authname-shadow: 0em .1em 0 #929496;
+  --color-authname-typing: #000;
 }

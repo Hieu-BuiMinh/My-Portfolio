@@ -1,5 +1,5 @@
 import React from 'react'
-import PorfolioView from '../../views/portfolio-view'
+import PorfolioView from 'src/views/portfolio-view'
 
 function PorfolioPage() {
 	return <PorfolioView />

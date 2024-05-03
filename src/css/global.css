@@ -1,5 +1,5 @@
 @layer tailwind {
-  @tailwind base;
+	@tailwind base;
 }
 
 @tailwind components;
@@ -7,18 +7,19 @@
 
 @import url('./variables/light.css');
 @import url('./variables/dark.css');
+@import url('./animations/index.css');
 
 * {
-  font-family: 'JetBrains Mono', monospace;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-family: 'JetBrains Mono', monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }

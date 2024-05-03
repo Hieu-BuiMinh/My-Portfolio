@@ -10,10 +10,13 @@
   --color-surface-900: #bbbbbb;
   --color-surface-999: #ffffff;
   
-  /* (51 51 51) === #333333 */
   --color-linear-gradient-skills-after: linear-gradient(90deg, #333333 40%, #33333300 100%);
   --color-linear-gradient-skills-before: linear-gradient(90deg, #33333300 0%, #333333 60%);
   
   /* mouse follower */
-  --color-follower-dot: #f87171;
+  --color-follower-dot: #333333;
+  /* auth name */
+  --color-authname: #ffffff;
+  --color-authname-shadow: 0em .1em 0 #265973;
+  --color-authname-typing: #fff;
 }
