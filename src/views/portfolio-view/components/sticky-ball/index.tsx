@@ -19,7 +19,7 @@ function StickyBall() {
 	}
 
 	useEffect(() => {
-		interact('.draggable').draggable({
+		interact('.draggable-ball').draggable({
 			inertia: true,
 			modifiers: [
 				interact.modifiers.restrictRect({
@@ -37,7 +37,7 @@ function StickyBall() {
 	return (
 		<>
 			{computedColorScheme === 'dark' && (
-				<span id="warlock-ball" className="warlock-ball glowing draggable z-[2]" />
+				<span id="warlock-ball" className="warlock-ball glowing draggable-ball touch-none z-[2]" />
 			)}
 		</>
 	)

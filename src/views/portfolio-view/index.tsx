@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import ScrollingSkills from './components/scrolling-skills'
-import AboutHeader from './components/sections/about-header'
+import AboutHeader from './sections/about-header'
 import SegmentNav from './components/segment-nav'
 
 import { useComputedColorScheme } from '@mantine/core'
 import StickyBall from './components/sticky-ball'
 import './css/style.css'
+import MyExpertise from './sections/expertise'
 
 function PorfolioView() {
 	const computedColorScheme = useComputedColorScheme('light')
@@ -72,8 +73,8 @@ function PorfolioView() {
 				<AboutHeader />
 			</section>
 			<section className="about-section" id="consulting">
-				consulting
-				<ScrollingSkills />
+				MyExpertise
+				<MyExpertise />
 			</section>
 			<section className="about-section" id="work-with-me">
 				work-with-me

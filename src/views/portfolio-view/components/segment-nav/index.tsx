@@ -17,7 +17,7 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 
 	if (device === 'mobile') {
 		return (
-			<div className="fixed w-full h-10 top-3 right-3 flex justify-between px-2 z-1">
+			<div className="fixed w-full h-10 top-3 right-3 flex justify-between px-2 z-10">
 				<ToggleDarkModeBtn />
 
 				<Menu withArrow shadow="md" width={150}>

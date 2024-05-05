@@ -1,0 +1,11 @@
+.glass-block {
+    @apply w-[576px] h-[215px] max-sm:w-[200px] border rounded-md p-3 flex gap-3;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
+
+.glass-block__heading{
+    flex-shrink: none;
+}
