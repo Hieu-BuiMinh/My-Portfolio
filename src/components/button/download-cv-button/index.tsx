@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core'
+import { Button, useComputedColorScheme } from '@mantine/core'
 import { RiDownloadCloud2Line } from '@remixicon/react'
 import confetti from 'canvas-confetti'
 import { useState } from 'react'
@@ -6,6 +6,7 @@ import toast from 'react-hot-toast'
 
 function DownLoadCVButton() {
 	const [loading, setLoading] = useState(false)
+	const computedColorScheme = useComputedColorScheme('light')
 
 	const explodeConfetti = () => {
 		const duration = 3 * 1000
@@ -53,8 +54,7 @@ function DownLoadCVButton() {
 			<Button
 				onClick={handleloading}
 				fullWidth
-				variant="gradient"
-				gradient={{ from: 'red', to: 'yellow', deg: 90 }}
+				variant={computedColorScheme === 'light' ? 'filled' : 'outline'}
 				size="xs"
 				radius="xl"
 				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}

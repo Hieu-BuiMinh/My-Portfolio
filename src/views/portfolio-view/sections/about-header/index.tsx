@@ -7,7 +7,7 @@ import './style.css'
 function AboutHeader() {
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
-			<p className="text-xl">Hello There 👋</p>
+			<p className="text-xl text-[var(--color-text-normal)]">Hello There 👋</p>
 			<span className="text-5xl flex items-end justify-center gap-5">
 				I'm
 				<AuthSlotCounter />
@@ -26,7 +26,14 @@ function AboutHeader() {
 				]}
 				wrapper="span"
 				speed={50}
-				style={{ display: 'inline-block', color: 'const(--color-authname-typing)', zIndex: 3 }}
+				style={{
+					display: 'inline-block',
+					color: 'var(--color-link-badge)',
+					zIndex: 3,
+					width: 450,
+					height: 150,
+					margin: 'auto',
+				}}
 				repeat={Infinity}
 				preRenderFirstString={true}
 			/>
