@@ -1,11 +1,26 @@
 .glass-block {
-    @apply w-[576px] h-[215px] max-sm:w-[200px] border rounded-md p-3 flex gap-3;
+    @apply w-full h-[215px] border rounded-md p-3 flex gap-3 max-md:flex-col;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
 }
 
-.glass-block__heading{
-    flex-shrink: none;
+.glass-block__header{
+    @apply flex-shrink-0 truncate font-light text-sm;
+}
+
+.glass-block__content{
+    @apply flex flex-col gap-3 justify-between text-base;
+}
+
+.glass-block__content-header{
+    @apply font-semibold;
+}
+.glass-block__content-overview{
+    @apply line-clamp-4 max-sm:line-clamp-3;
+}
+
+.glass-block__content-tech{
+    @apply flex gap-2 flex-wrap;
 }

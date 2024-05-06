@@ -23,12 +23,7 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 				<Menu withArrow shadow="md" width={150}>
 					<Menu.Target>
 						<Indicator color="lime" size={8} processing>
-							<Avatar
-								radius="xl"
-								src={
-									'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png'
-								}
-							/>
+							<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
 						</Indicator>
 					</Menu.Target>
 
@@ -63,10 +58,7 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 			</span>
 			<div className="segment-content">
 				<Indicator color="lime" size={8} processing>
-					<Avatar
-						radius="xl"
-						src={'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png'}
-					/>
+					<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
 				</Indicator>
 				<SegmentedControl withItemsBorders={false} radius="xl" value={navData.value} data={navData.data} />
 			</div>

@@ -1,9 +1,8 @@
 .about-page {
 	position: relative;
-	/* background-image: url('../../../../public/assets/images/commons/background/bg_01.svg'); */
 	background-color: var(--color-surface-100);
 }
 
 .about-section {
-	@apply pt-[60px] px-[15px] h-screen max-w-[1240px] m-auto;
+	@apply pt-[60px] px-[15px] h-auto max-w-[1240px] m-auto;
 }
