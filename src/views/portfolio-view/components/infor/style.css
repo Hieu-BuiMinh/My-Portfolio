@@ -1,0 +1,16 @@
+.side-infor {
+	@apply fixed bottom-0 flex flex-col gap-5 items-center px-3 max-md:hidden;
+}
+
+.side-infor::after {
+	@apply w-[1px] bg-[var(--color-link-badge)] h-20 m-auto;
+	content: '';
+}
+
+.side-infor a.mail-to {
+	@apply text-xs text-[var(--color-link-badge)] hover:-translate-y-2 transition;
+
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	letter-spacing: 2px;
+}

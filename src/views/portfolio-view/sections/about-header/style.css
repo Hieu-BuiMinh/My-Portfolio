@@ -1,6 +1,3 @@
-.auth-name {
-	@apply text-[5vw] font-black;
-
-	text-shadow: var(--color-authname-shadow);
-	color: var(--color-authname);
+.hand-waving:hover {
+	animation: wobble 1s linear infinite;
 }

@@ -1,0 +1,6 @@
+.auth-name {
+	@apply font-black;
+	font-size: clamp(40px, 5vw, 80px);
+	text-shadow: var(--color-authname-shadow);
+	color: var(--color-authname);
+}
