@@ -1,15 +1,20 @@
-import { randomId } from '@mantine/hooks'
-import SlotCounter from 'react-slot-counter'
 import { TypeAnimation } from 'react-type-animation'
 
+import { AuthSlotCounter } from '../../components/auth-slot-counter'
 import './style.css'
 
 function AboutHeader() {
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
-			<p className="text-xl text-[var(--color-text-normal)]">Hello There 👋</p>
-			<span className="text-5xl flex items-end justify-center gap-5">
-				I'm
+			<p className="text-xl text-[var(--color-text-normal)]">
+				<span>Hello There</span>
+				<span className="relative">
+					<span className="hand-waving text-[35px] absolute -right-14 -top-2">👋</span>
+				</span>
+			</p>
+
+			<span className="text-5xl flex items-center justify-center gap-5 max-sm:flex-col">
+				<span>I'm</span>
 				<AuthSlotCounter />
 			</span>
 
@@ -42,37 +47,3 @@ function AboutHeader() {
 }
 
 export default AboutHeader
-
-const AuthSlotCounter = () => {
-	const authName = 'Warlock-BM'
-
-	return (
-		<div className="z-[3]">
-			<SlotCounter
-				animateOnVisible={{ triggerOnce: false, rootMargin: '0px 0px -100px 0px' }}
-				duration={1}
-				startValue={authName.split('').map((key) => {
-					return (
-						<span className="auth-name" key={randomId()}>
-							{key}
-						</span>
-					)
-				})}
-				value={authName.split('').map((key) => {
-					return (
-						<span className="auth-name" key={randomId()}>
-							{key}
-						</span>
-					)
-				})}
-				dummyCharacters={authName.split('').map((key) => {
-					return (
-						<span className="auth-name" key={randomId()}>
-							{key}
-						</span>
-					)
-				})}
-			/>
-		</div>
-	)
-}

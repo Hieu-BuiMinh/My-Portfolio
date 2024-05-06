@@ -1,5 +1,5 @@
 .glass-block {
-    @apply w-full h-[215px] border border-slate-400 rounded-md p-3 flex gap-3 max-md:flex-col;
+    @apply w-full min-h-[215px] border border-slate-400 rounded-md p-3 flex gap-3 max-md:flex-col;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.5px);
@@ -14,13 +14,13 @@
     @apply flex flex-col gap-3 justify-between text-base;
 }
 
-.glass-block__content-header{
+.glass-content__header{
     @apply font-semibold text-[var(--color-link-badge)];
 }
-.glass-block__content-overview{
+.glass-content__overview{
     @apply line-clamp-4 max-sm:line-clamp-3;
 }
 
-.glass-block__content-tech{
+.glass-content__tech{
     @apply flex gap-2 flex-wrap;
 }

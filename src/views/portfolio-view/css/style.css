@@ -1,8 +1,7 @@
 .about-page {
-	position: relative;
-	background-color: var(--color-surface-100);
+	@apply relative px-[100px] bg-[var(--color-surface-100)] max-md:px-5;
 }
 
 .about-section {
-	@apply pt-[60px] px-[15px] h-auto max-w-[1240px] m-auto;
+	@apply pt-[60px] h-auto max-w-[1240px] m-auto;
 }

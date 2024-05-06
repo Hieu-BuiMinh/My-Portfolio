@@ -1,7 +1,7 @@
+import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import MouseFollower from './components/mouse-follower'
 import { useResponsiveDevice } from './hooks'
-import { useEffect } from 'react'
 
 function App() {
 	const device = useResponsiveDevice()
