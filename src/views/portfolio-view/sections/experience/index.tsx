@@ -1,7 +1,6 @@
-import React from 'react'
 import GlassBlock from '../../components/glass-block'
 
-function MyExpertise() {
+function MyExperience() {
 	return (
 		<div className="flex flex-col items-center gap-4">
 			<p className="text-[35px] font-bold">MyExpertise</p>
@@ -24,4 +23,4 @@ function MyExpertise() {
 	)
 }
 
-export default MyExpertise
+export default MyExperience

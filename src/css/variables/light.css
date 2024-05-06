@@ -10,6 +10,10 @@
   --color-surface-900: #444444;
   --color-surface-999: #333333;
 
+  /* text */
+  --color-text-normal: #353535;
+  --color-link-badge: #0C8599;
+
   --color-linear-gradient-skills-after: linear-gradient(90deg, #ffffff 40%, #ffffff00 100%);
   --color-linear-gradient-skills-before: linear-gradient(90deg, #ffffff00 0%, #ffffff 60%);
   
@@ -18,5 +22,4 @@
   /* auth name */
   --color-authname: #333333;
   --color-authname-shadow: 0em .1em 0 #929496;
-  --color-authname-typing: #000;
 }

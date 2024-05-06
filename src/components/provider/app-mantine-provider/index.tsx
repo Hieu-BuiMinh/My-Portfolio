@@ -6,16 +6,16 @@ interface IAppMantineProvider {
 }
 
 const myTheme: MantineColorsTuple = [
-	'#fff0e4',
-	'#ffe0cf',
-	'#fbbf9f',
-	'#f79c6c',
-	'#f47e40',
-	'#f36c24',
-	'#f36115',
-	'#d95009',
-	'#c24604',
-	'#a93a00',
+	'#e0fffb',
+	'#cefcf4',
+	'#a3f5e8',
+	'#73edda',
+	'#4de8cf',
+	'#33e4c8',
+	'#1de3c5',
+	'#00caad',
+	'#00b39a',
+	'#009b83',
 ]
 
 const theme = createTheme({
@@ -27,7 +27,7 @@ const theme = createTheme({
 	primaryColor: 'myTheme',
 })
 
-function AppMantineProvider({ children }: IAppMantineProvider) {
+function AppMantineProvider({ children }: Readonly<IAppMantineProvider>) {
 	return <MantineProvider theme={theme}>{children}</MantineProvider>
 }
 

@@ -6,7 +6,7 @@ import SegmentNav from './components/segment-nav'
 import { useComputedColorScheme } from '@mantine/core'
 import StickyBall from './components/sticky-ball'
 import './css/style.css'
-import MyExpertise from './sections/expertise'
+import MyExperience from './sections/experience'
 
 function PorfolioView() {
 	const computedColorScheme = useComputedColorScheme('light')
@@ -74,7 +74,7 @@ function PorfolioView() {
 			</section>
 			<section className="about-section" id="consulting">
 				MyExpertise
-				<MyExpertise />
+				<MyExperience />
 			</section>
 			<section className="about-section" id="work-with-me">
 				work-with-me
