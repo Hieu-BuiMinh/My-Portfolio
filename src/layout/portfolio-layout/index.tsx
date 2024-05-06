@@ -10,7 +10,7 @@ function PortfolioLayout({ children }: Readonly<IPortfolioLayout>) {
 		title: 'Warlock-BM',
 		description:
 			'Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-		url: 'https://hieubm-portfolio.vercel.app',
+		url: window.location.pathname + window.location.search,
 		image: 'https://brittanychiang.com/og.png',
 		siteName: 'Your Website Name',
 	}
@@ -20,20 +20,29 @@ function PortfolioLayout({ children }: Readonly<IPortfolioLayout>) {
 			<Helmet prioritizeSeoTags>
 				<meta charSet="utf-8" />
 				<title>Warlock-BM</title>
+				<meta name="title" content="Warlock-BM" />
 				<meta
 					name="description"
 					content="Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
 				/>
-				<link rel="apple-touch-icon" href="/assets/images/commons/avatar/avt_favicon.png" />
-				<link rel="icon" href="/assets/images/commons/avatar/avt_favicon.png" type="image/png" />
 
-				<meta property="og:title" content={ogData.title} />
-				<meta property="og:description" content={ogData.description} />
-				<meta property="og:url" content={ogData.url} />
-				<meta property="og:image" content={ogData.image} />
-				<meta property="og:site_name" content={ogData.siteName} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://hieubm-portfolio.vercel.app/" />
+				<meta property="og:title" content="Warlock-BM" />
+				<meta
+					property="og:description"
+					content="Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
+				/>
+				<meta property="og:image" content="/assets/images/meta/thumbnail.png" />
 
-				<meta name="description" content={ogData.description} />
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content="https://hieubm-portfolio.vercel.app/" />
+				<meta property="twitter:title" content="Warlock-BM" />
+				<meta
+					property="twitter:description"
+					content="Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
+				/>
+				<meta property="twitter:image" content="/assets/images/meta/thumbnail.png" />
 			</Helmet>
 			{children}
 		</>
