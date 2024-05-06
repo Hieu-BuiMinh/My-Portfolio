@@ -17,6 +17,8 @@ function PortfolioLayout({ children }: Readonly<IPortfolioLayout>) {
 					content="Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
 				/>
 
+				<link rel="icon" href="/assets/images/commons/avatar/avt_favicon.png" type="image/png" />
+
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://hieubm-portfolio.vercel.app/" />
 				<meta property="og:title" content="Warlock-BM" />
