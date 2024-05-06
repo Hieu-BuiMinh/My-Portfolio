@@ -6,15 +6,6 @@ interface IPortfolioLayout {
 }
 
 function PortfolioLayout({ children }: Readonly<IPortfolioLayout>) {
-	const ogData = {
-		title: 'Warlock-BM',
-		description:
-			'Warlock-BM is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-		url: window.location.pathname + window.location.search,
-		image: 'https://brittanychiang.com/og.png',
-		siteName: 'Your Website Name',
-	}
-
 	return (
 		<>
 			<Helmet prioritizeSeoTags>
