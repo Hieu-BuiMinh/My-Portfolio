@@ -19,8 +19,8 @@ function MouseFollower() {
 		}, 100)
 		setTimeout(() => {
 			if (circleRef.current) {
-				circleRef.current.style.left = `${clientX - 20}px`
-				circleRef.current.style.top = `${clientY - 20}px`
+				circleRef.current.style.left = `${clientX - 15}px`
+				circleRef.current.style.top = `${clientY - 15}px`
 			}
 		}, 170)
 	}
@@ -87,7 +87,7 @@ function MouseFollower() {
 			<span
 				id="mouse-circle"
 				ref={circleRef}
-				className="fixed z-50 w-10 h-10 border border-[var(--color-surface-700)] rounded-full top-0 left-0 pointer-events-none transition"
+				className="fixed z-50 w-[30px] h-[30px] border border-[var(--color-surface-700)] rounded-full top-0 left-0 pointer-events-none transition"
 			/>
 			<span
 				id="mouse-dot"
