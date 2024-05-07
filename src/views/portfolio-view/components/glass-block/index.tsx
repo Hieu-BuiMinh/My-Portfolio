@@ -26,9 +26,9 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 				<p className="text-[var(--color-link-badge)]">{data.blockHeader}</p>
 
 				{data.meta && (
-					<div className="w-full flex flex-col gap-3 text-center">
+					<div className="w-full flex flex-col gap-1 text-center">
 						<img
-							className="w-20 h-20 mx-auto rounded-full max-md:w-10 max-md:h-10"
+							className="w-20 h-20 mx-auto rounded-full max-md:w-14 max-md:h-14"
 							alt="company-img"
 							src={data.meta.coAvt}
 						/>
