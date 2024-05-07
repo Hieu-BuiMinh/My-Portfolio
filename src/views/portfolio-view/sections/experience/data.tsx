@@ -10,8 +10,8 @@ export const experiences = [
 			</>
 		),
 		badge: [
-			{ label: 'Next Js' },
-			{ label: 'Vite Js' },
+			{ label: 'NextJs' },
+			{ label: 'ViteJs' },
 			{ label: 'Zustand' },
 			{ label: 'Mantine' },
 			{ label: 'Tailwind' },
