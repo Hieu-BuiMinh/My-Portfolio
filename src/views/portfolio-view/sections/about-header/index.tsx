@@ -42,6 +42,11 @@ function AboutHeader() {
 				repeat={Infinity}
 				preRenderFirstString={true}
 			/>
+
+			<p className="max-sm:text-xs max-md:text-base max-sm:leading-7">
+				I'm a software engineer specializing in building (and occasionally designing) exceptional digital
+				experiences. Currently, I'm focused on building accessible products.
+			</p>
 		</div>
 	)
 }

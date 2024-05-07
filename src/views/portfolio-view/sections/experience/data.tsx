@@ -27,7 +27,7 @@ export const experiences = [
 		],
 		meta: {
 			coName: 'SoftWorld Vietnam',
-			coAvt: '/assets/images/commons/avatar/avt_favicon.png',
+			coAvt: '/assets/images/commons/logo/sw_logo.png',
 			coOverview: <>Including developers and designers, to implement and advocate</>,
 		},
 	},
@@ -54,7 +54,7 @@ export const experiences = [
 		],
 		meta: {
 			coName: 'TMA Solutions',
-			coAvt: '/assets/images/commons/avatar/avt_favicon.png',
+			coAvt: '/assets/images/commons/logo/tma_logo.png',
 			coOverview: <>Good environment for beginner programmers on their learning path</>,
 		},
 	},
@@ -77,9 +77,9 @@ export const experiences = [
 		],
 		meta: {
 			coName: 'UEH',
-			coAvt: '/assets/images/commons/avatar/avt_favicon.png',
+			coAvt: '/assets/images/commons/logo/ueh_logo.png',
 			coOverview: (
-				<>Students are equipped with in-depth knowledge of building, managing and maintaining IT systems</>
+				<>I've been equipped with in-depth knowledge of building, managing and maintaining IT systems</>
 			),
 		},
 	},

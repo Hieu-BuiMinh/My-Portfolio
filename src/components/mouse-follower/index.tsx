@@ -68,9 +68,9 @@ function MouseFollower() {
 	}, [])
 
 	useEffect(() => {
-		computedColorScheme === 'dark'
-			? circleRef.current?.classList.add('backdrop-invert')
-			: circleRef.current?.classList.remove('backdrop-invert')
+		// computedColorScheme === 'dark'
+		// 	? circleRef.current?.classList.add('backdrop-invert')
+		// 	: circleRef.current?.classList.remove('backdrop-invert')
 
 		const warlockBall = document.getElementById('warlock-ball')
 		warlockBall?.addEventListener('mouseover', handleWarlockBallMouseover)

@@ -3,7 +3,7 @@ import React from 'react'
 
 function PortfolioFooter() {
 	return (
-		<div className="flex flex-col gap-3 items-center justify-center py-5 hover:text-[var(--color-link-badge)]">
+		<div className="flex flex-col gap-3 items-center justify-center py-5 hover:text-[var(--color-link-badge)] text-center">
 			<p className="text-sm">Designed & Built by Warlock-BM</p>
 			<p className="text-sm flex gap-3">
 				<span className="flex gap-2">
