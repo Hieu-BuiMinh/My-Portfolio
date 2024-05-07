@@ -6,7 +6,7 @@ import './style.css'
 function AboutHeader() {
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
-			<p className="text-xl text-[var(--color-text-normal)]">
+			<p className="hello-header">
 				<span>Hello There</span>
 				<span className="relative">
 					<span className="hand-waving text-[35px] absolute -right-14 -top-2">👋</span>
@@ -35,7 +35,7 @@ function AboutHeader() {
 					display: 'inline-block',
 					color: 'var(--color-link-badge)',
 					zIndex: 3,
-					width: 450,
+					maxWidth: 450,
 					height: 150,
 					margin: 'auto',
 				}}
