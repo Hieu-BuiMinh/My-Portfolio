@@ -26,10 +26,14 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 				<p className="text-[var(--color-link-badge)]">{data.blockHeader}</p>
 
 				{data.meta && (
-					<div className="w-full flex flex-col gap-3">
-						<img className="w-10 h-10 mx-auto rounded-full" alt="company-img" src={data.meta.coAvt} />
-						<div className="font-bold text-wrap text-center">{data.meta.coName}</div>
-						<div className="text-[12px] italic text-wrap">{data.meta.coOverview}</div>
+					<div className="w-full flex flex-col gap-3 text-center">
+						<img
+							className="w-20 h-20 mx-auto rounded-full max-md:w-10 max-md:h-10"
+							alt="company-img"
+							src={data.meta.coAvt}
+						/>
+						<div className="font-bold text-wrap">{data.meta.coName}</div>
+						<div className="text-[12px] italic text-wrap max-sm:hidden">{data.meta.coOverview}</div>
 					</div>
 				)}
 			</div>

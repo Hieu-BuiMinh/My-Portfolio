@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "Warlock-BM <minhhieu2122000@gmail.com>",
   "private": true,
   "dependencies": {
     "@mantine/core": "^7.8.1",

@@ -79,7 +79,7 @@ export const experiences = [
 			coName: 'UEH',
 			coAvt: '/assets/images/commons/avatar/avt_favicon.png',
 			coOverview: (
-				<>Students are equipped with in-depth knowledge of building, managing and maintaining IT systems</>
+				<>I've been equipped with in-depth knowledge of building, managing and maintaining IT systems</>
 			),
 		},
 	},
