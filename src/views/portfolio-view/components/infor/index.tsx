@@ -4,10 +4,10 @@ import { randomId } from '@mantine/hooks'
 
 function SideInfor() {
 	const socialNextwork = [
-		{ icon: <RiGithubLine size={20} color="var(--color-link-badge)" />, href: '/' },
-		{ icon: <RiInstagramLine size={20} color="var(--color-link-badge)" />, href: '/' },
-		{ icon: <RiTwitterXLine size={20} color="var(--color-link-badge)" />, href: '/' },
-		{ icon: <RiLinkedinLine size={20} color="var(--color-link-badge)" />, href: '/' },
+		{ icon: <RiGithubLine size={20} color="var(--color-link-badge)" />, href: 'https://github.com/Hieu-BuiMinh' },
+		{ icon: <RiInstagramLine size={20} color="var(--color-link-badge)" />, href: '#' },
+		{ icon: <RiTwitterXLine size={20} color="var(--color-link-badge)" />, href: '#' },
+		{ icon: <RiLinkedinLine size={20} color="var(--color-link-badge)" />, href: '#' },
 	]
 	return (
 		<>
