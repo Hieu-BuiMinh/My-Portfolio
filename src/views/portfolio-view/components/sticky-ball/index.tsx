@@ -1,11 +1,8 @@
 import interact from 'interactjs'
-import { useComputedColorScheme } from '@mantine/core'
 import { useEffect } from 'react'
 import './style.css'
 
 function StickyBall() {
-	const computedColorScheme = useComputedColorScheme('light')
-
 	function dragMoveListener(event: any) {
 		const target = event.target
 
@@ -19,7 +16,8 @@ function StickyBall() {
 	}
 
 	useEffect(() => {
-		interact('.warlock-ball').draggable({
+		const draggableRef = interact('.warlock-ball')
+		draggableRef.draggable({
 			inertia: true,
 			modifiers: [
 				interact.modifiers.restrictRect({
@@ -33,15 +31,11 @@ function StickyBall() {
 				move: dragMoveListener,
 			},
 		})
+
+		return () => draggableRef.unset()
 	}, [])
 
-	return (
-		<>
-			{computedColorScheme === 'dark' && (
-				<span id="warlock-ball" className="warlock-ball glowing touch-none z-[2]" />
-			)}
-		</>
-	)
+	return <span id="warlock-ball" className="warlock-ball glowing touch-none z-[2]" />
 }
 
 export default StickyBall

@@ -27,7 +27,7 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 
 				{data.meta && (
 					<div className="w-full flex flex-col gap-3">
-						<img className="w-10 h-10 mx-auto" alt="co.img" src={data.meta.coAvt} />
+						<img className="w-10 h-10 mx-auto rounded-full" alt="company-img" src={data.meta.coAvt} />
 						<div className="font-bold text-wrap text-center">{data.meta.coName}</div>
 						<div className="text-[12px] italic text-wrap">{data.meta.coOverview}</div>
 					</div>
@@ -42,12 +42,7 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 					{data?.descUrls?.map((item) => {
 						return (
 							<a target="_blank" rel="noreferrer" href={item.url} key={randomId()}>
-								<Badge
-									variant="light"
-									color="cyan"
-									leftSection={<RiLinkM size={15} />}
-									styles={{ label: { color: 'unset' } }}
-								>
+								<Badge variant="light" color="cyan" leftSection={<RiLinkM size={15} />}>
 									{item.label}
 								</Badge>
 							</a>
@@ -58,12 +53,7 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 				<div className="glass-content__tech">
 					{data?.badge?.map((badge) => {
 						return (
-							<Badge
-								key={randomId()}
-								variant="outline"
-								color="var(--color-link-badge)"
-								styles={{ label: { color: 'unset' } }}
-							>
+							<Badge key={randomId()} variant="outline" color="var(--color-link-badge)">
 								{badge.label}
 							</Badge>
 						)

@@ -77,8 +77,9 @@ function PorfolioView() {
 	return (
 		<div className="about-page" style={style}>
 			<SegmentNav navData={navData} handlesetNavData={handlesetNavData} />
-			<StickyBall />
+
 			<SideInfor />
+			{computedColorScheme === 'dark' && <StickyBall />}
 
 			<section className="about-section" id="hello">
 				<AboutHeader />

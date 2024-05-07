@@ -24,7 +24,7 @@ function AboutHeader() {
 					1500,
 					'Passionate about creating responsive and interactive web experiences.',
 					1500,
-					'Skilled in HTML, CSS, JavaScript, and modern frontend framework as NextJS.',
+					'Skilled in HTML, CSS, JavaScript/Typescript, and modern frontend framework as NextJS.',
 					1500,
 					'Experienced in building user-friendly interfaces and optimizing web performance.',
 					1500,
