@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
 import ScrollingSkills from './components/scrolling-skills'
-import AboutHeader from './sections/about-header'
 import SegmentNav from './components/segment-nav'
+import AboutHeader from './sections/about-header'
 
 import { useComputedColorScheme } from '@mantine/core'
-import StickyBall from './components/sticky-ball'
+import PortfolioFooter from './components/footer'
+import SideInfor from './components/infor'
 import './css/style.css'
 import MyExperience from './sections/experience'
 import MyExpertise from './sections/expertise'
-import SideInfor from './components/infor'
-import PortfolioFooter from './components/footer'
 
 function PorfolioView() {
 	const computedColorScheme = useComputedColorScheme('light')
