@@ -79,7 +79,7 @@ function PorfolioView() {
 			<SegmentNav navData={navData} handlesetNavData={handlesetNavData} />
 
 			<SideInfor />
-			{computedColorScheme === 'dark' && <StickyBall />}
+			{/* {computedColorScheme === 'dark' && <StickyBall />} */}
 
 			<section className="about-section" id="hello">
 				<AboutHeader />
