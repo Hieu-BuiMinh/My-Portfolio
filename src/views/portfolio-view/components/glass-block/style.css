@@ -36,7 +36,7 @@
 }
 
 .glass-block.new::before {
-	@apply absolute w-[120px] h-[300%] left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2;
+	@apply absolute w-[120px] h-[500%] left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2;
 	content: '';
 	background: linear-gradient(#00e5ff, var(--color-link-badge));
 

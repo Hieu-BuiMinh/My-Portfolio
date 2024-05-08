@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import ScrollingSkills from './components/scrolling-skills'
 import SegmentNav from './components/segment-nav'
 import AboutHeader from './sections/about-header'
@@ -61,24 +61,23 @@ function PorfolioView() {
 		})
 	}
 
-	useEffect(() => {
-		computedColorScheme === 'light'
-			? setStyle((prev) => {
-					//#DDDDDD === circle color
-					return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_light.svg)' }
-				})
-			: setStyle((prev) => {
-					//#5a5757 === circle color
-					return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_dark.svg)' }
-				})
-	}, [computedColorScheme])
+	// useEffect(() => {
+	// 	computedColorScheme === 'light'
+	// 		? setStyle((prev) => {
+	// 				//#DDDDDD === circle color
+	// 				return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_light.svg)' }
+	// 			})
+	// 		: setStyle((prev) => {
+	// 				//#5a5757 === circle color
+	// 				return { ...prev, backgroundImage: 'url(/assets/images/commons/background/bg_dark.svg)' }
+	// 			})
+	// }, [computedColorScheme])
 
 	return (
 		<div className="about-page" style={style}>
 			<SegmentNav navData={navData} handlesetNavData={handlesetNavData} />
 
 			<SideInfor />
-			{/* {computedColorScheme === 'dark' && <StickyBall />} */}
 
 			<section className="about-section" id="hello">
 				<AboutHeader />

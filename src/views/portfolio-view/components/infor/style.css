@@ -14,3 +14,8 @@
 	-webkit-writing-mode: vertical-rl;
 	letter-spacing: 2px;
 }
+.neon-infor {
+	fill: #fff;
+
+	animation: neon-infor-glow var(--neon-delay-index) linear infinite;
+}

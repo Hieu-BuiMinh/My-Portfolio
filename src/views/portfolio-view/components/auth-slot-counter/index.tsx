@@ -3,6 +3,7 @@ import SlotCounter from 'react-slot-counter'
 import './style.css'
 
 export const AuthSlotCounter = () => {
+	// const authDummyCharacters = '🎄🎁🎉🎃🎠🎈🚀🎄🎁🎉🎃🎠🎈🚀'
 	const authName = 'Warlock-BM'
 
 	return (

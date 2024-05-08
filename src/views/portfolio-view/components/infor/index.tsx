@@ -1,6 +1,6 @@
+import { randomId } from '@mantine/hooks'
 import { RiGithubLine, RiInstagramLine, RiLinkedinLine, RiTwitterXLine } from '@remixicon/react'
 import './style.css'
-import { randomId } from '@mantine/hooks'
 
 function SideInfor() {
 	const socialNextwork = [
@@ -24,7 +24,14 @@ function SideInfor() {
 			</div>
 			<div className="side-infor right-5">
 				<a className="mail-to" href="mailto:minhhieu2122000@gmail.com">
-					minhhieu2122000@gmail.com
+					{'minhhieu2122000@gmail.com'.split('').map((letter, i) => {
+						const style = { '--neon-delay-index': (i + 1) * 100 + 'ms' } as React.CSSProperties
+						return (
+							<span className="neon-infor" style={style} key={randomId()}>
+								{letter}
+							</span>
+						)
+					})}
 				</a>
 			</div>
 		</>
