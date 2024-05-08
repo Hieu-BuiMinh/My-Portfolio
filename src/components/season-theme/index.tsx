@@ -2,8 +2,10 @@ import React, { memo, useEffect, useState } from 'react'
 import Snowfall from 'react-snowfall'
 import { useSeasonStore } from 'src/store/season-store'
 import { fallImgs } from './data'
+import { useResponsiveDevice } from 'src/hooks'
 
 function SeasonTheme() {
+	const device = useResponsiveDevice()
 	const { season } = useSeasonStore((state) => ({
 		season: state.season,
 	}))
@@ -28,12 +30,18 @@ function SeasonTheme() {
 	}, [season])
 
 	return (
-		<div className="absolute top-0 w-full h-screen touch-none">
-			{season === 'winter' && <Snowfall snowflakeCount={15} />}
+		<>
+			{season === 'winter' && <Snowfall snowflakeCount={15} style={{ position: 'fixed', zIndex: 999 }} />}
 			{season === 'fall' && (
-				<Snowfall images={imgList} snowflakeCount={5} radius={[9, 20]} rotationSpeed={[1, 5]} />
+				<Snowfall
+					images={imgList}
+					snowflakeCount={5}
+					style={{ position: 'fixed', zIndex: 999 }}
+					radius={device === 'mobile' ? [9, 20] : [15, 30]}
+					rotationSpeed={[1, 5]}
+				/>
 			)}
-		</div>
+		</>
 	)
 }
 

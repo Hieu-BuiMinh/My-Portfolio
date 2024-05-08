@@ -19,7 +19,29 @@
   
   /* mouse follower */
   --color-follower-dot: #59be23;
+
   /* auth name */
   --color-authname: #ffffff;
   --color-authname-shadow: 0em .1em 0 #265973;
+  
+  /* themes */
+  --light-bg: var(--color-surface-100);
+  --light-bg-circle: #DDDDDD;
+  --light-bg-spring: #A1BAD8;
+  --light-bg-spring-circle: #D7D7D7;
+  --light-bg-summer: #A1BAD8;
+  --light-bg-summer-circle: #D7D7D7;
+  --light-bg-fall: #A1BAD8;
+  --light-bg-fall-circle: #D7D7D7;
+  --light-bg-winter: #A1BAD8;
+  --light-bg-winter-circle: #D7D7D7;
+
+  --dark-bg: var(--color-surface-100);
+  --dark-bg-circle: #5A5757;
+  --dark-bg-summer: #A1BAD8;
+  --dark-bg-summer-circle: #D7D7D7;
+  --dark-bg-fall: #A1BAD8;
+  --dark-bg-fall-circle: #D7D7D7;
+  --dark-bg-winter: #A1BAD8;
+  --dark-bg-winter-circle: #D7D7D7;
 }
