@@ -1,7 +1,9 @@
+import './i18n'
 import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import MouseFollower from './components/mouse-follower'
 import { useResponsiveDevice } from './hooks'
+import FloatingMenuBottom from './components/button/floating-menu-bottom'
 
 function App() {
 	const device = useResponsiveDevice()
@@ -17,6 +19,7 @@ function App() {
 		<>
 			<Outlet />
 			{device === 'desktop' && <MouseFollower />}
+			<FloatingMenuBottom />
 		</>
 	)
 }

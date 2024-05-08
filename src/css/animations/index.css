@@ -43,3 +43,25 @@
 		transform: translate(-50%, -50%) rotate(360deg);
 	}
 }
+
+@keyframes neon-infor-glow {
+	0% {
+		color: var(--color-link-badge);
+		text-shadow:
+		0 0 2px #fff,
+		0 0 2px #fff,
+		0 0 2px var(--color-link-badge),
+		0 0 2px var(--color-link-badge),
+		0 0 2px var(--color-link-badge);
+	}
+	
+	100% {
+		color: transparent;
+		text-shadow:
+		0 0 1px #fff,
+		0 0 1px #fff,
+		0 0 0px var(--color-link-badge),
+		0 0 0px var(--color-link-badge),
+		0 0 0px var(--color-link-badge);
+	}
+}

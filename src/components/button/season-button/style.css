@@ -1,0 +1,5 @@
+.season-segment{
+  label[data-active="true"]{
+    color: var(--color-link-badge);
+  }
+}
