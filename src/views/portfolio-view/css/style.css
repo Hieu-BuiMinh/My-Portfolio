@@ -3,5 +3,10 @@
 }
 
 .about-section {
-	@apply pt-[60px] h-auto max-w-[1240px] m-auto;
+	@apply pt-[60px] min-h-screen max-w-[1240px] m-auto;
+}
+
+.section-header {
+	@apply text-xl text-[var(--color-text-normal)] text-center font-bold;
+	line-height: unset;
 }

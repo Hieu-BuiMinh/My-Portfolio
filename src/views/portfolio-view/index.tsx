@@ -90,9 +90,8 @@ function PorfolioView() {
 			</section>
 			<section className="about-section" id="contact">
 				<ScrollingSkills />
+				<PortfolioFooter />
 			</section>
-
-			<PortfolioFooter />
 		</div>
 	)
 }

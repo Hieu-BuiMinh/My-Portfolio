@@ -17,13 +17,13 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 
 	if (device === 'mobile') {
 		return (
-			<div className="fixed w-full h-10 top-3 right-3 flex justify-between px-2 z-10">
+			<div className="mobile-menu-avt">
 				<ToggleDarkModeBtn />
 
 				<Menu withArrow shadow="md" width={150}>
 					<Menu.Target>
 						<Indicator color="lime" size={8} processing>
-							<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
+							<Avatar className="target" radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
 						</Indicator>
 					</Menu.Target>
 
@@ -60,7 +60,13 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 				<Indicator color="lime" size={8} processing>
 					<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
 				</Indicator>
-				<SegmentedControl withItemsBorders={false} radius="xl" value={navData.value} data={navData.data} />
+				<SegmentedControl
+					className="segment-nav"
+					withItemsBorders={false}
+					radius="xl"
+					value={navData.value}
+					data={navData.data}
+				/>
 			</div>
 
 			<div className="w-[130px]">

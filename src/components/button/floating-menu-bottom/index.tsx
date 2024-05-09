@@ -2,6 +2,7 @@ import { ActionIcon, Affix, Menu } from '@mantine/core'
 import { RiSettings3Line } from '@remixicon/react'
 import LanguageSegment from '../multilang-button'
 import SeasonSegment from '../season-button'
+import ToTopButton from '../to-top-button'
 
 function FloatingMenuBottom() {
 	return (

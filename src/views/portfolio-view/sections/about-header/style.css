@@ -1,6 +1,3 @@
-.hello-header {
-	@apply text-xl text-[var(--color-text-normal)];
-}
 .hello-header:hover .hand-waving {
 	animation: wobble 1s linear infinite;
 }

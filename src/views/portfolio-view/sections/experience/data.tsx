@@ -79,7 +79,8 @@ export const experiences = [
 			coName: 'University of Economics Ho Chi Minh City',
 			coAvt: '/assets/images/commons/logo/ueh_logo.png',
 			coOverview: (
-				<>I've been equipped with in-depth knowledge of building, managing and maintaining IT systems</>
+				// <>I've been equipped with in-depth knowledge of building, managing and maintaining IT systems</>
+				<> My journey started from here 🚀</>
 			),
 		},
 	},

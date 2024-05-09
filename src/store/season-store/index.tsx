@@ -10,8 +10,8 @@ type seasonStateAction = {
 }
 
 export const useSeasonStore = create<seasonState & seasonStateAction>((set) => ({
-	season: 'spring',
+	season: 'normal',
 
 	updateseason: (_s: seasonState['season']) => set({ season: _s }),
-	resetSeason: () => set({ season: 'spring' }),
+	resetSeason: () => set({ season: 'normal' }),
 }))
