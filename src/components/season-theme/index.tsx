@@ -1,11 +1,12 @@
 import React, { memo, useEffect, useState } from 'react'
 import Snowfall from 'react-snowfall'
 import { useSeasonStore } from 'src/store/season-store'
-import { fallImgs } from './data'
+import { fallImgs, springImgs } from './data'
 import { useResponsiveDevice } from 'src/hooks'
 
 function SeasonTheme() {
 	const device = useResponsiveDevice()
+
 	const { season } = useSeasonStore((state) => ({
 		season: state.season,
 	}))
@@ -26,6 +27,9 @@ function SeasonTheme() {
 		if (season === 'fall') {
 			handleImgs(fallImgs)
 		}
+		if (season === 'spring') {
+			handleImgs(springImgs)
+		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [season])
 
@@ -39,6 +43,15 @@ function SeasonTheme() {
 					style={{ position: 'fixed', zIndex: 999 }}
 					radius={device === 'mobile' ? [9, 20] : [15, 30]}
 					rotationSpeed={[1, 5]}
+				/>
+			)}
+			{season === 'spring' && (
+				<Snowfall
+					images={imgList}
+					snowflakeCount={5}
+					style={{ position: 'fixed', zIndex: 999 }}
+					radius={device === 'mobile' ? [9, 20] : [15, 30]}
+					rotationSpeed={[0, 1]}
 				/>
 			)}
 		</>

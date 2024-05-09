@@ -22,4 +22,6 @@ body {
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-link-badge) var(--color-surface-300);
 }

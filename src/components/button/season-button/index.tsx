@@ -1,5 +1,5 @@
 import { SegmentedControl } from '@mantine/core'
-import { RiFireLine, RiLeafLine, RiRainbowLine, RiSnowflakeLine } from '@remixicon/react'
+import { RiFireLine, RiLeafLine, RiProhibited2Line, RiRainbowLine, RiSnowflakeLine } from '@remixicon/react'
 import './style.css'
 import { useSeasonStore } from 'src/store/season-store'
 
@@ -17,10 +17,11 @@ function SeasonSegment() {
 			fullWidth
 			size="xs"
 			data={[
-				{ label: <RiRainbowLine className="m-auto" size={20} />, value: 'spring' },
-				{ label: <RiFireLine className="m-auto" size={20} />, value: 'summer' },
-				{ label: <RiLeafLine className="m-auto" size={20} />, value: 'fall' },
-				{ label: <RiSnowflakeLine className="m-auto" size={20} />, value: 'winter' },
+				{ label: <RiProhibited2Line className="m-auto" size={18} />, value: 'normal' },
+				{ label: <RiRainbowLine className="m-auto" size={18} />, value: 'spring' },
+				{ label: <RiFireLine className="m-auto" size={18} />, value: 'summer' },
+				{ label: <RiLeafLine className="m-auto" size={18} />, value: 'fall' },
+				{ label: <RiSnowflakeLine className="m-auto" size={18} />, value: 'winter' },
 			]}
 		/>
 	)

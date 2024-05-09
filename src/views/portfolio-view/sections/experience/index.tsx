@@ -5,7 +5,7 @@ import { experiences } from './data'
 function MyExperience() {
 	return (
 		<div className="flex flex-col items-center gap-4">
-			<p className="font-bold" style={{ fontSize: 'clamp(20px, 5vw, 50px)' }}>
+			<p className="section-header" style={{ fontSize: 'clamp(20px, 5vw, 50px)' }}>
 				Professional Experiences
 			</p>
 

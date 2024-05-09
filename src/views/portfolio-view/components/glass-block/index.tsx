@@ -1,7 +1,8 @@
-import { Badge } from '@mantine/core'
+import { Badge, Spoiler } from '@mantine/core'
 import { randomId } from '@mantine/hooks'
+import { RiArrowUpSLine, RiLinkM, RiMoreLine } from '@remixicon/react'
+import { useResponsiveDevice } from 'src/hooks'
 import './style.css'
-import { RiLinkM } from '@remixicon/react'
 
 interface IGlassBlock {
 	data: {
@@ -20,13 +21,15 @@ interface IGlassBlock {
 }
 
 function GlassBlock({ data }: Readonly<IGlassBlock>) {
+	const device = useResponsiveDevice()
+
 	return (
 		<div className={`glass-block ${data?.isNew && 'new'}`}>
 			<div className="glass-block__header">
 				<p className="text-[var(--color-link-badge)]">{data.blockHeader}</p>
 
 				{data.meta && (
-					<div className="w-full flex flex-col gap-1 text-center">
+					<div className="w-full flex flex-col gap-2 text-center font-thin">
 						<img
 							className="w-20 h-20 mx-auto rounded-full max-md:w-14 max-md:h-14"
 							alt="company-img"
@@ -40,7 +43,17 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 
 			<div className="glass-block__content">
 				<p className="glass-content__header">{data.contentHeader}</p>
-				<p className="glass-content__overview">{data.contentOverview}</p>
+				{device === 'mobile' ? (
+					<Spoiler
+						maxHeight={80}
+						showLabel={<RiMoreLine size={15} />}
+						hideLabel={<RiArrowUpSLine size={15} />}
+					>
+						<p className="text-xs">{data.contentOverview}</p>
+					</Spoiler>
+				) : (
+					<p className="glass-content__overview">{data.contentOverview}</p>
+				)}
 
 				<div className="glass-content__urls">
 					{data?.descUrls?.map((item) => {
@@ -54,15 +67,17 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 					})}
 				</div>
 
-				<div className="glass-content__tech">
-					{data?.badge?.map((badge) => {
-						return (
-							<Badge key={randomId()} variant="outline" color="var(--color-link-badge)">
-								{badge.label}
-							</Badge>
-						)
-					})}
-				</div>
+				{data?.badge && (
+					<div className="glass-content__tech">
+						{data.badge.map((badge) => {
+							return (
+								<Badge key={randomId()} variant="outline" color="var(--color-link-badge)">
+									{badge.label}
+								</Badge>
+							)
+						})}
+					</div>
+				)}
 			</div>
 		</div>
 	)
