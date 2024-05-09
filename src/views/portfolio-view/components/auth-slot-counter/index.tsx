@@ -7,7 +7,8 @@ export const AuthSlotCounter = () => {
 	const authName = 'Warlock-BM'
 
 	return (
-		<div className="z-[3] slot-container">
+		<div className="z-[3] slot-container relative">
+			{/* <img src="/assets/images/commons/hats/hat_01.svg" alt="hat" className='auth-hat'/> */}
 			<SlotCounter
 				animateOnVisible={{ triggerOnce: false, rootMargin: '0px 0px -100px 0px' }}
 				duration={1}

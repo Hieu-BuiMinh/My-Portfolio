@@ -9,7 +9,7 @@ function AboutHeader() {
 			<p className="section-header">
 				<span>Hello There</span>
 				<span className="relative">
-					<span className="hand-waving text-[35px] absolute -right-14 -top-2">👋</span>
+					<span className="hand-waving text-[35px] absolute -right-14 -top-4">👋</span>
 				</span>
 			</p>
 
