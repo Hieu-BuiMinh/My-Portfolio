@@ -28,7 +28,7 @@ function MyExpertise() {
 				<div className="col-span-4 max-lg:col-span-12 max-md:col-span-12 max-sm:col-span-12">
 					<div className="expertise-block-quote">
 						<p className="text-xl max-sm:text-base font-bold">
-							"The problem is not the problem, the problem is your attitude about the problem"
+							"The problem is not the problem, the problem is your attitude about the problem" 🐦
 						</p>
 
 						<span className="text-xs italic">-Captain Jack Sparrow, 'Pirates of the Caribbean'-</span>

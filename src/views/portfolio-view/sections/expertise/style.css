@@ -3,7 +3,6 @@
 }
 
 .expertise-block-quote::after{
-  @apply absolute left-0 top-0 w-2 h-full bg-green-400 rounded;
-  @apply max-sm:w-1;
+  @apply absolute left-0 top-0 w-1 h-full bg-[var(--color-link-badge)] rounded;
   content: '';
 }

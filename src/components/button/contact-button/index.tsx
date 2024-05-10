@@ -18,14 +18,7 @@ function ContactButton() {
 				Say Hi!
 			</Button>
 
-			<Modal
-				opened={opened}
-				withCloseButton={false}
-				centered
-				onClose={close}
-				classNames={{ body: '!p-0' }}
-				className="!overflow-visible"
-			>
+			<Modal opened={opened} withCloseButton={false} centered onClose={close} classNames={{ body: '!p-0' }}>
 				<ContactModalContent />
 			</Modal>
 		</>
