@@ -4,7 +4,7 @@ import { memo } from 'react'
 
 function ToggleDarkModeBtn() {
 	const { setColorScheme } = useMantineColorScheme()
-	const computedColorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true })
+	const computedColorScheme = useComputedColorScheme('light')
 
 	const hanldeChangeTheme = () => {
 		setTimeout(() => {

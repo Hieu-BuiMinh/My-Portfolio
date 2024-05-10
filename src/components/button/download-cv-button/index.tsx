@@ -3,8 +3,10 @@ import { RiDownloadCloud2Line } from '@remixicon/react'
 import confetti from 'canvas-confetti'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
+import { useResponsiveDevice } from 'src/hooks'
 
 function DownLoadCVButton() {
+	const device = useResponsiveDevice()
 	const [loading, setLoading] = useState(false)
 	const computedColorScheme = useComputedColorScheme('light')
 
@@ -38,12 +40,12 @@ function DownLoadCVButton() {
 			setLoading(false)
 			toast.success('Thanks for downloading ☕', {
 				style: {
-					background: 'var(--color-surface-500)',
-					color: 'var(--color-surface-999)',
+					background: 'var(--color-surface-999)',
+					color: 'var(--color-surface-100)',
 					borderRadius: '30px',
-					fontSize: '13px',
+					fontSize: '12px',
 				},
-				position: 'bottom-left',
+				position: device === 'mobile' ? 'top-center' : 'bottom-left',
 				duration: 5000,
 			})
 		}, 3000)

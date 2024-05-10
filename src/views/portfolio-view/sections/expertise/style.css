@@ -1,0 +1,9 @@
+.expertise-block-quote{
+  @apply h-full p-3 pl-5 relative flex flex-col gap-3;
+}
+
+.expertise-block-quote::after{
+  @apply absolute left-0 top-0 w-2 h-full bg-green-400 rounded;
+  @apply max-sm:w-1;
+  content: '';
+}

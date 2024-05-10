@@ -1,13 +1,15 @@
-import { randomId } from '@mantine/hooks'
+import { landmarksData } from './landmark'
+import { randomId, useToggle } from '@mantine/hooks'
 import SlotCounter from 'react-slot-counter'
 import './style.css'
 
 export const AuthSlotCounter = () => {
-	// const authDummyCharacters = '🎄🎁🎉🎃🎠🎈🚀🎄🎁🎉🎃🎠🎈🚀'
 	const authName = 'Warlock-BM'
+	const [landmarksVal, toggleLandmarksVal] = useToggle(landmarksData)
 
 	return (
-		<div className="z-[3] slot-container">
+		<button type="button" onClick={() => toggleLandmarksVal()} className="z-[3] slot-container relative">
+			<img src={landmarksVal} alt="landmark" className="landmark" />
 			<SlotCounter
 				animateOnVisible={{ triggerOnce: false, rootMargin: '0px 0px -100px 0px' }}
 				duration={1}
@@ -33,6 +35,6 @@ export const AuthSlotCounter = () => {
 					)
 				})}
 			/>
-		</div>
+		</button>
 	)
 }

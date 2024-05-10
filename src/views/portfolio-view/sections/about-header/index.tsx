@@ -9,13 +9,14 @@ function AboutHeader() {
 			<p className="section-header">
 				<span>Hello There</span>
 				<span className="relative">
-					<span className="hand-waving text-[35px] absolute -right-14 -top-2">👋</span>
+					<span className="hand-waving text-[35px] absolute -right-14 -top-4">👋</span>
 				</span>
 			</p>
 
-			<span className="text-5xl flex items-center justify-center gap-5 max-sm:flex-col">
-				<span>I'm</span>
+			<span className="text-5xl mt-14 flex flex-wrap items-center justify-center gap-5 max-sm:flex-col max-sm:gap-0 relative">
+				<span className="leading-[38px]">I'm</span>
 				<AuthSlotCounter />
+				<p className="w-full text-xl text-[var(--color-surface-999)] mt-3">Senior Frontend Engineer</p>
 			</span>
 
 			<TypeAnimation
@@ -23,6 +24,8 @@ function AboutHeader() {
 					'SOFTWARE ENGINEER & FRONT END DEVELOPER.',
 					1500,
 					'Passionate about creating responsive and interactive web experiences.',
+					1500,
+					'I build pixel-perfect, engaging, and accessible digital experiences.',
 					1500,
 					'Skilled in HTML, CSS, JavaScript/Typescript, and modern frontend framework as NextJS.',
 					1500,
@@ -36,7 +39,7 @@ function AboutHeader() {
 					color: 'var(--color-link-badge)',
 					zIndex: 3,
 					maxWidth: 450,
-					height: 150,
+					minHeight: 80,
 					margin: 'auto',
 				}}
 				repeat={Infinity}

@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import ScrollingSkills from './components/scrolling-skills'
 import SegmentNav from './components/segment-nav'
 import AboutHeader from './sections/about-header'
 
 import { useComputedColorScheme } from '@mantine/core'
-import PortfolioFooter from './components/footer'
 import SideInfor from './components/infor'
 import './css/style.css'
+import ContactSection from './sections/contact'
 import MyExperience from './sections/experience'
 import MyExpertise from './sections/expertise'
 
@@ -89,8 +88,7 @@ function PorfolioView() {
 				<MyExperience />
 			</section>
 			<section className="about-section" id="contact">
-				<ScrollingSkills />
-				<PortfolioFooter />
+				<ContactSection />
 			</section>
 		</div>
 	)
