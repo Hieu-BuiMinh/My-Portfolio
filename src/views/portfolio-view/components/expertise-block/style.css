@@ -3,7 +3,7 @@
 }
 
 .expertise-block__header {
-	@apply flex gap-3 items-center;
+	@apply flex gap-3 items-center font-bold;
 }
 
 .expertise-block__header .header-icon {
@@ -11,9 +11,9 @@
 }
 
 .expertise-block__content {
-	@apply text-xs italic;
+	@apply text-xs italic text-[var(--color-surface-999)];
 }
 
 .expertise-block__content-overview {
-	@apply flex flex-col gap-3 relative border-l-2 border-[var(--color-surface-800)] ml-3 pl-3;
+	@apply flex flex-col gap-3 relative border-l-2 border-[var(--color-link-badge)] ml-3 pl-3;
 }
