@@ -16,9 +16,9 @@ function ExpertiseBlock({ data }: Readonly<IExpertiseBlock>) {
 				<span className="text-xl">{data.header}</span>
 			</div>
 			<div className="expertise-block__content">
-				<p>{'<h3>'}</p>
+				<p className="text-[var(--color-link-badge)]">{'<h3>'}</p>
 				<div className="expertise-block__content-overview">{data.content}</div>
-				<p>{'</h3>'}</p>
+				<p className="text-[var(--color-link-badge)]">{'</h3>'}</p>
 			</div>
 		</div>
 	)
