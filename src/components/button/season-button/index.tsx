@@ -17,11 +17,11 @@ function SeasonSegment() {
 			fullWidth
 			size="xs"
 			data={[
-				{ label: <RiProhibited2Line className="m-auto" size={18} />, value: 'normal' },
-				{ label: <RiRainbowLine className="m-auto" size={18} />, value: 'spring' },
-				{ label: <RiFireLine className="m-auto" size={18} />, value: 'summer' },
-				{ label: <RiLeafLine className="m-auto" size={18} />, value: 'fall' },
-				{ label: <RiSnowflakeLine className="m-auto" size={18} />, value: 'winter' },
+				{ label: <RiProhibited2Line className="m-auto" size={18} />, disabled: false, value: 'normal' },
+				{ label: <RiRainbowLine className="m-auto" size={18} />, disabled: true, value: 'spring' },
+				{ label: <RiFireLine className="m-auto" size={18} />, disabled: true, value: 'summer' },
+				{ label: <RiLeafLine className="m-auto" size={18} />, disabled: false, value: 'fall' },
+				{ label: <RiSnowflakeLine className="m-auto" size={18} />, disabled: false, value: 'winter' },
 			]}
 		/>
 	)

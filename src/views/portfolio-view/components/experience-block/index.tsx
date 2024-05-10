@@ -4,7 +4,7 @@ import { RiArrowUpSLine, RiLinkM, RiMoreLine } from '@remixicon/react'
 import { useResponsiveDevice } from 'src/hooks'
 import './style.css'
 
-interface IGlassBlock {
+interface IExperienceBlock {
 	data: {
 		blockHeader: string
 		contentHeader: string
@@ -20,7 +20,7 @@ interface IGlassBlock {
 	}
 }
 
-function GlassBlock({ data }: Readonly<IGlassBlock>) {
+function ExperienceBlock({ data }: Readonly<IExperienceBlock>) {
 	const device = useResponsiveDevice()
 
 	return (
@@ -46,7 +46,7 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 				{device === 'mobile' ? (
 					<Spoiler
 						maxHeight={80}
-						showLabel={<RiMoreLine size={15} />}
+						showLabel={<span className="text-[10px]">more...</span>}
 						hideLabel={<RiArrowUpSLine size={15} />}
 					>
 						<p className="text-xs">{data.contentOverview}</p>
@@ -83,4 +83,4 @@ function GlassBlock({ data }: Readonly<IGlassBlock>) {
 	)
 }
 
-export default GlassBlock
+export default ExperienceBlock

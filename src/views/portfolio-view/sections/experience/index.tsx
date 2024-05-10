@@ -1,10 +1,10 @@
 import { randomId } from '@mantine/hooks'
-import GlassBlock from '../../components/glass-block'
+import ExperienceBlock from '../../components/experience-block'
 import { experiences } from './data'
 
 function MyExperience() {
 	return (
-		<div className="flex flex-col items-center gap-4">
+		<div className="flex flex-col items-center gap-10 max-sm:gap-5">
 			<p className="section-header" style={{ fontSize: 'clamp(20px, 5vw, 50px)' }}>
 				Professional Experiences
 			</p>
@@ -13,7 +13,7 @@ function MyExperience() {
 				{experiences.map((exp) => {
 					return (
 						<div key={randomId()} className="col-span-6 max-lg:col-span-12">
-							<GlassBlock data={exp} />
+							<ExperienceBlock data={exp} />
 						</div>
 					)
 				})}

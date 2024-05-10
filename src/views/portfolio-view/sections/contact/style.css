@@ -1,0 +1,4 @@
+.contact-overview {
+	@apply text-base font-thin text-center text-[var(--color-link-badge)] max-w-[600px] m-auto;
+  @apply max-sm:max-w-[unset] max-sm:text-sm;
+}

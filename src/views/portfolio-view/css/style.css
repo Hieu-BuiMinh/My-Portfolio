@@ -1,9 +1,11 @@
 .about-page {
 	@apply relative px-[100px] bg-[var(--color-surface-100)] max-md:px-5;
+	@apply flex flex-col gap-14;
 }
 
 .about-section {
-	@apply pt-[60px] min-h-screen max-w-[1240px] m-auto;
+	@apply pt-[60px] max-w-[1240px] m-auto;
+	/* @apply min-h-screen; */
 }
 
 .section-header {
