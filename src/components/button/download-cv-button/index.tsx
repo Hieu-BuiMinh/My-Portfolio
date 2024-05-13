@@ -12,7 +12,7 @@ interface IDownLoadCVButton {
 function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 	const device = useResponsiveDevice()
 	const [loading, setLoading] = useState(false)
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 
 	const explodeConfetti = () => {
 		const duration = 3 * 1000
@@ -63,9 +63,7 @@ function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 				variant={computedColorScheme === 'light' ? 'filled' : 'outline'}
 				size="xs"
 				radius="xl"
-				rightSection={
-					!innerText && <RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />
-				}
+				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}
 				loading={loading}
 			>
 				{innerText ?? 'Download CV'}

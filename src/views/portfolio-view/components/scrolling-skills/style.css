@@ -24,7 +24,7 @@
 }
 
 .skills {
-	@apply py-3 flex-shrink-0 flex gap-3 justify-between absolute;
+	@apply py-3 flex-shrink-0 flex gap-3 justify-between;
 	animation: skillsScrolling 60s linear infinite;
 }
 

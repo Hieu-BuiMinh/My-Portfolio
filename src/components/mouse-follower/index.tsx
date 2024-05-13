@@ -6,7 +6,7 @@ function MouseFollower() {
 	const dotRef = useRef<HTMLSpanElement>(null)
 	const circleRef = useRef<HTMLSpanElement>(null)
 
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 
 	const handleMouseMove = (event: MouseEvent) => {
 		const { clientX, clientY } = event

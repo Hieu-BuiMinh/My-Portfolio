@@ -4,7 +4,7 @@ import ContactModalContent from './contact-modal-content'
 
 function ContactButton() {
 	const [opened, { open, close }] = useDisclosure(false)
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 
 	return (
 		<>

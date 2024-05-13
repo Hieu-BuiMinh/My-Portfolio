@@ -10,7 +10,7 @@ import MyExperience from './sections/experience'
 import MyExpertise from './sections/expertise'
 
 function PorfolioView() {
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 	const [style, setStyle] = useState({})
 
 	const [navData, setNavData] = useState({
