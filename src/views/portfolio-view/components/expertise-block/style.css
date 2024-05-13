@@ -17,3 +17,7 @@
 .expertise-block__content-overview {
 	@apply flex flex-col gap-3 relative border-l-2 border-[var(--color-link-badge)] ml-3 pl-3;
 }
+
+.header-icon{
+	animation: floating 2s ease-in-out infinite;
+}

@@ -22,7 +22,6 @@ function WebgiViewer() {
 	const canvasRef = useRef<HTMLCanvasElement>(null)
 
 	const setupViewer = useCallback(async () => {
-		console.log(123)
 		const viewer = new ViewerApp({
 			canvas: canvasRef.current as HTMLCanvasElement,
 		})

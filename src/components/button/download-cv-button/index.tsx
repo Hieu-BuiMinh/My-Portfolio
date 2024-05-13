@@ -5,10 +5,14 @@ import { useState } from 'react'
 import toast from 'react-hot-toast'
 import { useResponsiveDevice } from 'src/hooks'
 
-function DownLoadCVButton() {
+interface IDownLoadCVButton {
+	innerText?: string
+}
+
+function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 	const device = useResponsiveDevice()
 	const [loading, setLoading] = useState(false)
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 
 	const explodeConfetti = () => {
 		const duration = 3 * 1000
@@ -62,7 +66,7 @@ function DownLoadCVButton() {
 				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}
 				loading={loading}
 			>
-				Download CV
+				{innerText ?? 'Download CV'}
 			</Button>
 		</a>
 	)

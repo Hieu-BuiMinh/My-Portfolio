@@ -4,7 +4,7 @@ import './style.css'
 import { useComputedColorScheme } from '@mantine/core'
 
 function SideInfor() {
-	const computedColorScheme = useComputedColorScheme('light')
+	const computedColorScheme = useComputedColorScheme()
 
 	const socialNextwork = [
 		{ icon: <RiGithubLine size={20} color="var(--color-link-badge)" />, href: 'https://github.com/Hieu-BuiMinh' },

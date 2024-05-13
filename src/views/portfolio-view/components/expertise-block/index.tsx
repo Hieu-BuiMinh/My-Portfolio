@@ -12,7 +12,12 @@ function ExpertiseBlock({ data }: Readonly<IExpertiseBlock>) {
 	return (
 		<div className="expertise-block">
 			<div className="expertise-block__header">
-				<img className="header-icon" src={data.icon} alt="expertise_img" />
+				<img
+					className="header-icon"
+					style={{ animationDelay: Math.random() * (3 - 1) + 1 + 's' }}
+					src={data.icon}
+					alt="expertise_img"
+				/>
 				<span className="text-xl">{data.header}</span>
 			</div>
 			<div className="expertise-block__content">
