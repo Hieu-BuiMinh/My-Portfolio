@@ -4,7 +4,7 @@
 }
 
 .about-section {
-	@apply pt-[60px] max-w-[1240px] m-auto;
+	@apply pt-[60px] w-full max-w-[1240px] m-auto;
 	/* @apply min-h-screen; */
 }
 
