@@ -1,15 +1,22 @@
 import { randomId } from '@mantine/hooks'
 import ExpertiseBlock from '../../components/expertise-block'
 import ScrollingSkills from '../../components/scrolling-skills'
+import FirePot from '../../components/fire-pot-rive'
 import { expertises } from './data'
 import './style.css'
 
 function MyExpertise() {
 	return (
 		<div className="flex flex-col items-center gap-10 max-sm:gap-5">
-			<p className="section-header" style={{ fontSize: 'clamp(20px, 5vw, 50px)' }}>
+			<div
+				className="section-header flex gap-5 items-center max-sm:flex-col"
+				style={{ fontSize: 'clamp(20px, 5vw, 50px)' }}
+			>
 				My Expertises
-			</p>
+				<div className="w-[150px] h-[150px]">
+					<FirePot />
+				</div>
+			</div>
 
 			<ScrollingSkills />
 
