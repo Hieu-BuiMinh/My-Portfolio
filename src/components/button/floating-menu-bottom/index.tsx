@@ -2,9 +2,11 @@ import { ActionIcon, Affix, Menu } from '@mantine/core'
 import { RiSettings3Line } from '@remixicon/react'
 import LanguageSegment from '../multilang-button'
 import SeasonSegment from '../season-button'
-import ToTopButton from '../to-top-button'
+import { useTranslation } from 'react-i18next'
 
 function FloatingMenuBottom() {
+	const { t } = useTranslation()
+
 	return (
 		<Affix position={{ bottom: 20, right: 25 }}>
 			<Menu shadow="md" width={200} closeOnItemClick={false} withArrow>
@@ -15,12 +17,12 @@ function FloatingMenuBottom() {
 				</Menu.Target>
 
 				<Menu.Dropdown>
-					<Menu.Label>Language</Menu.Label>
+					<Menu.Label>{t('commons.buttons.floating-btn-setting.language')}</Menu.Label>
 					<Menu.Item>
 						<LanguageSegment />
 					</Menu.Item>
 					<Menu.Divider></Menu.Divider>
-					<Menu.Label>Seasons</Menu.Label>
+					<Menu.Label>{t('commons.buttons.floating-btn-setting.seasons')}</Menu.Label>
 					<Menu.Item>
 						<SeasonSegment />
 					</Menu.Item>

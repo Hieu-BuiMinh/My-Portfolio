@@ -9,6 +9,6 @@
 }
 
 .section-header {
-	@apply text-xl text-[var(--color-text-normal)] text-center font-bold;
+	@apply text-3xl text-[var(--color-text-normal)] text-center font-bold;
 	line-height: unset;
 }

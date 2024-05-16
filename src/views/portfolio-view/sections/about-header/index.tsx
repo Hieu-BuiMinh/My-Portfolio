@@ -2,36 +2,40 @@ import { TypeAnimation } from 'react-type-animation'
 
 import { AuthSlotCounter } from '../../components/auth-slot-counter'
 import './style.css'
+import { useTranslation } from 'react-i18next'
 
 function AboutHeader() {
+	const { t } = useTranslation()
+	const sequence = [
+		`${t('portfolio.sections.hello.typing-text.text-01')}`,
+		1500,
+		`${t('portfolio.sections.hello.typing-text.text-02')}`,
+		1500,
+		`${t('portfolio.sections.hello.typing-text.text-03')}`,
+		1500,
+		`${t('portfolio.sections.hello.typing-text.text-04')}`,
+		1500,
+		`${t('portfolio.sections.hello.typing-text.text-05')}`,
+		1500,
+	]
+
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
 			<p className="section-header">
-				<span>Hello There</span>
+				<span>{t('portfolio.sections.hello.header')}</span>
 				<span className="relative">
 					<span className="hand-waving text-[35px] absolute -right-14 -top-4">👋</span>
 				</span>
 			</p>
 
 			<span className="text-5xl mt-14 flex flex-wrap items-center justify-center gap-5 max-sm:flex-col max-sm:gap-0 relative">
-				<span className="leading-[38px]">I'm</span>
+				<span className="leading-[38px]">{t('portfolio.sections.hello.i-am')}</span>
 				<AuthSlotCounter />
 				<p className="w-full text-xl text-[var(--color-surface-999)] mt-3">Senior Frontend Engineer</p>
 			</span>
 
 			<TypeAnimation
-				sequence={[
-					'SOFTWARE ENGINEER & FRONT END DEVELOPER.',
-					1500,
-					'Passionate about creating responsive and interactive web experiences.',
-					1500,
-					'I build pixel-perfect, engaging, and accessible digital experiences.',
-					1500,
-					'Skilled in HTML, CSS, JavaScript/Typescript, and modern frontend framework as NextJS.',
-					1500,
-					'Experienced in building user-friendly interfaces and optimizing web performance.',
-					1500,
-				]}
+				sequence={sequence}
 				wrapper="span"
 				speed={50}
 				style={{

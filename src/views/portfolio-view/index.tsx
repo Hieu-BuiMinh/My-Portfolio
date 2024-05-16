@@ -8,8 +8,10 @@ import './css/style.css'
 import ContactSection from './sections/contact'
 import MyExperience from './sections/experience'
 import MyExpertise from './sections/expertise'
+import { useTranslation } from 'react-i18next'
 
 function PorfolioView() {
+	const { t } = useTranslation()
 	const computedColorScheme = useComputedColorScheme()
 	const [style, setStyle] = useState({})
 
@@ -19,7 +21,7 @@ function PorfolioView() {
 			{
 				label: (
 					<a className="flex" href="#hello" onClick={() => handlesetNavData('#hello')}>
-						Hello
+						{t('portfolio.sections.hello.label')}
 					</a>
 				),
 				value: '#hello',
@@ -27,7 +29,7 @@ function PorfolioView() {
 			{
 				label: (
 					<a className="flex" href="#expertise" onClick={() => handlesetNavData('#expertise')}>
-						Expertise
+						{t('portfolio.sections.expertises.label')}
 					</a>
 				),
 				value: '#expertise',
@@ -35,7 +37,7 @@ function PorfolioView() {
 			{
 				label: (
 					<a className="flex" href="#experience" onClick={() => handlesetNavData('#experience')}>
-						Experience
+						{t('portfolio.sections.experiences.label')}
 					</a>
 				),
 				value: '#experience',
@@ -43,7 +45,7 @@ function PorfolioView() {
 			{
 				label: (
 					<a className="flex" href="#contact" onClick={() => handlesetNavData('#contact')}>
-						Contact
+						{t('portfolio.sections.contact.label')}
 					</a>
 				),
 				value: '#contact',
