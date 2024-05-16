@@ -19,35 +19,19 @@ function PorfolioView() {
 		value: '#hello',
 		data: [
 			{
-				label: (
-					<a className="flex" href="#hello" onClick={() => handlesetNavData('#hello')}>
-						{t('portfolio.sections.hello.label')}
-					</a>
-				),
+				label: 'portfolio.sections.hello.label',
 				value: '#hello',
 			},
 			{
-				label: (
-					<a className="flex" href="#expertise" onClick={() => handlesetNavData('#expertise')}>
-						{t('portfolio.sections.expertises.label')}
-					</a>
-				),
+				label: 'portfolio.sections.expertises.label',
 				value: '#expertise',
 			},
 			{
-				label: (
-					<a className="flex" href="#experience" onClick={() => handlesetNavData('#experience')}>
-						{t('portfolio.sections.experiences.label')}
-					</a>
-				),
+				label: 'portfolio.sections.experiences.label',
 				value: '#experience',
 			},
 			{
-				label: (
-					<a className="flex" href="#contact" onClick={() => handlesetNavData('#contact')}>
-						{t('portfolio.sections.contact.label')}
-					</a>
-				),
+				label: 'portfolio.sections.contact.label',
 				value: '#contact',
 			},
 		],

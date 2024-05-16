@@ -68,7 +68,7 @@ function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}
 				loading={loading}
 			>
-				{innerText ?? t('commons.buttons.download-cv-btn')}
+				{innerText ?? t('commons.buttons.download_cv_btn')}
 			</Button>
 		</a>
 	)

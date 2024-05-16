@@ -6,18 +6,6 @@ import { useTranslation } from 'react-i18next'
 
 function AboutHeader() {
 	const { t } = useTranslation()
-	const sequence = [
-		`${t('portfolio.sections.hello.typing-text.text-01')}`,
-		1500,
-		`${t('portfolio.sections.hello.typing-text.text-02')}`,
-		1500,
-		`${t('portfolio.sections.hello.typing-text.text-03')}`,
-		1500,
-		`${t('portfolio.sections.hello.typing-text.text-04')}`,
-		1500,
-		`${t('portfolio.sections.hello.typing-text.text-05')}`,
-		1500,
-	]
 
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
@@ -29,13 +17,24 @@ function AboutHeader() {
 			</p>
 
 			<span className="text-5xl mt-14 flex flex-wrap items-center justify-center gap-5 max-sm:flex-col max-sm:gap-0 relative">
-				<span className="leading-[38px]">{t('portfolio.sections.hello.i-am')}</span>
+				<span className="leading-[38px]">{t('portfolio.sections.hello.i_am')}</span>
 				<AuthSlotCounter />
 				<p className="w-full text-xl text-[var(--color-surface-999)] mt-3">Senior Frontend Engineer</p>
 			</span>
 
 			<TypeAnimation
-				sequence={sequence}
+				sequence={[
+					`${t('portfolio.sections.hello.typing_text.text_01')}`,
+					1500,
+					`${t('portfolio.sections.hello.typing_text.text_02')}`,
+					1500,
+					`${t('portfolio.sections.hello.typing_text.text_03')}`,
+					1500,
+					`${t('portfolio.sections.hello.typing_text.text_04')}`,
+					1500,
+					`${t('portfolio.sections.hello.typing_text.text_05')}`,
+					1500,
+				]}
 				wrapper="span"
 				speed={50}
 				style={{

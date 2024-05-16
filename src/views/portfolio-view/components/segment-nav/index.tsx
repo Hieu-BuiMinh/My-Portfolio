@@ -6,6 +6,7 @@ import ToggleDarkModeBtn from 'src/components/button/toggle-darkmode'
 import DownLoadCVButton from 'src/components/button/download-cv-button'
 
 import './style.css'
+import { useTranslation } from 'react-i18next'
 
 interface ISegmentNav {
 	navData: { value: string; data: { label: React.ReactNode; value: string }[] }
@@ -13,6 +14,7 @@ interface ISegmentNav {
 }
 
 function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
+	const { t } = useTranslation()
 	const device = useResponsiveDevice()
 
 	if (device === 'mobile') {
@@ -37,7 +39,9 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 									key={randomId()}
 									classNames={{ itemLabel: 'text-xs' }}
 								>
-									{nav.label}
+									<a className="flex" href={`${nav.value}`}>
+										{t(nav.label)}
+									</a>
 								</Menu.Item>
 							)
 						})}
@@ -66,6 +70,9 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 					radius="xl"
 					value={navData.value}
 					data={navData.data}
+					onChange={() => {
+						handlesetNavData(navData.value)
+					}}
 				/>
 			</div>
 
