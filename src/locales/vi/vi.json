@@ -1,5 +1,74 @@
 {
   "translation": {
-    "lang": "vietnam"
+    "commons": {
+      "buttons": {
+        "download-cv-btn": "Tải xuống CV",
+        "download-cv-btn-contact": "Tìm hiểu thêm về tớ!",
+        "floating-btn-setting": {
+          "language": "Ngôn ngữ",
+          "seasons": "Mùa"
+        }
+      },
+      "toasts":{
+        "thanks-for-download": "Cảm ơn cậu vì đã tải xún ☕"
+      }
+    },
+    "portfolio": {
+      "sections": {
+        "hello": {
+          "header": "Chào cậu",
+          "label": "Hello",
+          "i-am": "Tớ là",
+          "typing-text": {
+            "text-01": "KIẾN TRÚC SƯ PHẦN MỀM & PHÁT TRIỂN FRONT-END.",
+            "text-02": "Đam mê sáng tạo các trải nghiệm web đáp ứng và tương tác.",
+            "text-03": "Tớ xây dựng các trải nghiệm kỹ thuật số hoàn hảo, hấp dẫn và dễ truy cập.",
+            "text-04": "Thành thạo HTML, CSS, JavaScript/Typescript và các framework front-end hiện đại như NextJS.",
+            "text-05": "Kinh nghiệm xây dựng giao diện thân thiện với người dùng và tối ưu hóa hiệu suất web."
+          },
+          "short-intro": "Tớ là một kỹ sư phần mềm chuyên xây dựng (và đôi khi thiết kế) các trải nghiệm kỹ thuật số tuyệt vời. Hiện tại, tớ tập trung vào việc xây dựng các sản phẩm dễ truy cập."
+        },
+        "expertises": {
+          "header": "Chuyên môn của Tớ",
+          "label": "Chuyên môn",
+          "expertises-blocks": {
+            "block-01": "Kinh nghiệm trong cả lập trình hướng đối tượng và lập trình chức năng: C#, Java, JavaScript, TypeScript.",
+            "block-02": "Đam mê về UI/UX. Hơn 2 năm kinh nghiệm phát triển HTML, CSS, JS, React và framework NextJS."
+          }
+        },
+        "experiences": {
+          "header": "Kinh nghiệm chuyên môn",
+          "label": "Kinh nghiệm",
+          "experexperiencestises-blocks": {
+            "block-01": {
+              "content-overview": "Xây dựng và duy trì các thành phần quan trọng được sử dụng để xây dựng giao diện người dùng của Pluxee, trên toàn bộ sản phẩm. Làm việc chặt chẽ với các nhóm chức năng, bao gồm các nhà phát triển và thiết kế, để triển khai và ủng hộ các thực tiễn tốt nhất về khả năng truy cập web.",
+              "meta": {
+                "co-overview": "Bao gồm các nhà phát triển và thiết kế, để triển khai và ủng hộ"
+              }
+            },
+            "block-02": {
+              "content-overview": "Phát triển và thiết kế trang web quản trị tương tác cho TanThanh Container, bao gồm trang đích, giao diện người dùng, ủy quyền người dùng và trạng thái container.",
+              "meta": {
+                "co-overview": "Môi trường tốt cho lập trình viên beginner trên con đường học tập của họ"
+              }
+            },
+            "block-03": {
+              "content-overview": "Người học được đào tạo về công nghệ tích hợp kiến thức đa ngành, thúc đẩy khả năng ứng dụng công nghệ vào các hoạt động chuyên môn. Chương trình giảng dạy được thiết kế hướng tới ứng dụng và thực hành: 30% kiến thức khoa học cơ bản; 70% kiến thức ngành, kiến thức thực hành, ứng dụng chuyên sâu vào các lĩnh vực chuyên môn.",
+              "meta": {
+                "co-overview": "Hành trình của tớ bắt đầu từ đây "
+              }
+            }
+          }
+        },
+        "contact": {
+          "header": "Liên hệ",
+          "label": "Liên hệ",
+          "footer": {
+            "my-script": "Tớ luôn tìm kiếm mọi cơ hội mới, hộp thư đến của tớ luôn mở. Dù cậu có câu hỏi hay chỉ muốn chào hỏi, tớ sẽ cố gắng hết sức để trả lời cậu!",
+            "designed-by": "Được thiết kế và xây dựng bởi Warlock-BM"
+          }
+        }
+      }
+    }
   }
 }

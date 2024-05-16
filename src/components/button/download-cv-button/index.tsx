@@ -3,6 +3,7 @@ import { RiDownloadCloud2Line } from '@remixicon/react'
 import confetti from 'canvas-confetti'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import { useResponsiveDevice } from 'src/hooks'
 
 interface IDownLoadCVButton {
@@ -10,6 +11,7 @@ interface IDownLoadCVButton {
 }
 
 function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
+	const { t } = useTranslation()
 	const device = useResponsiveDevice()
 	const [loading, setLoading] = useState(false)
 	const computedColorScheme = useComputedColorScheme()
@@ -42,7 +44,7 @@ function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 		explodeConfetti()
 		setTimeout(() => {
 			setLoading(false)
-			toast.success('Thanks for downloading ☕', {
+			toast.success(t('commons.toasts.thanks-for-download'), {
 				style: {
 					background: 'var(--color-surface-999)',
 					color: 'var(--color-surface-100)',
@@ -66,7 +68,7 @@ function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 				rightSection={<RiDownloadCloud2Line size={16} style={{ animation: 'bounce 1s infinite' }} />}
 				loading={loading}
 			>
-				{innerText ?? 'Download CV'}
+				{innerText ?? t('commons.buttons.download-cv-btn')}
 			</Button>
 		</a>
 	)

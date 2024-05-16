@@ -7,8 +7,8 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 export const defaultNS = 'en'
 
 i18n.use(Backend)
-	.use(LanguageDetector)
 	.use(initReactI18next)
+	.use(LanguageDetector)
 	.init({
 		lng: 'en',
 		debug: true,

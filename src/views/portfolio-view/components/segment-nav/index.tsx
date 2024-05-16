@@ -69,7 +69,7 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 				/>
 			</div>
 
-			<div className="w-[130px]">
+			<div className="w-[150px]">
 				<DownLoadCVButton />
 			</div>
 		</div>
