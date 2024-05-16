@@ -1,13 +1,13 @@
 import { Alignment, Fit, Layout, useRive } from '@rive-app/react-canvas'
-import { memo } from 'react'
+import React from 'react'
 
-const FirePot = () => {
+function NotFoundCharacter() {
 	const { RiveComponent } = useRive({
-		src: '/assets/riv/fire_pot_rotate.riv',
-		stateMachines: ['State Machine 1'],
-		artboard: 'Spin the fire- Comp',
+		src: '/assets/riv/flame_and_spark.riv',
+		stateMachines: ['Untitled 1'],
+		artboard: 'New Artboard',
 		layout: new Layout({
-			fit: Fit.Cover,
+			fit: Fit.Contain,
 			alignment: Alignment.Center,
 		}),
 		autoplay: true,
@@ -15,4 +15,4 @@ const FirePot = () => {
 	return <RiveComponent />
 }
 
-export default memo(FirePot)
+export default NotFoundCharacter
