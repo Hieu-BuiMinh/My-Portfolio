@@ -7,6 +7,7 @@ import DownLoadCVButton from 'src/components/button/download-cv-button'
 
 import './style.css'
 import { useTranslation } from 'react-i18next'
+import ContactButton from 'src/components/button/contact-button'
 
 interface ISegmentNav {
 	navData: { value: string; data: { label: React.ReactNode; value: string }[] }
@@ -61,15 +62,19 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 				<ToggleDarkModeBtn />
 			</span>
 			<div className="segment-content">
-				<Indicator color="lime" size={8} processing>
-					<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
-				</Indicator>
+				<ContactButton>
+					<Indicator color="lime" size={8} processing>
+						<Avatar radius="xl" src={'/assets/images/commons/avatar/avt_01.png'} />
+					</Indicator>
+				</ContactButton>
 				<SegmentedControl
 					className="segment-nav"
 					withItemsBorders={false}
 					radius="xl"
 					value={navData.value}
-					data={navData.data}
+					data={navData.data.map((item) => {
+						return { ...item, label: t(item.label) }
+					})}
 					onChange={() => {
 						handlesetNavData(navData.value)
 					}}

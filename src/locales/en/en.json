@@ -39,7 +39,7 @@
         "experiences": {
           "header": "Professional Experiences",
           "label": "Experience",
-          "experexperiencestises_blocks": {
+          "experiences_blocks": {
             "block_01": {
               "content_overview": "Build and maintain critical components used to construct Pluxee's frontend, across the whole product. Work closely with cross_functional teams, including developers and designers, to implement and advocate for best practices in web accessibility.",
               "meta": {

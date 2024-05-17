@@ -22,7 +22,7 @@
           "typing_text": {
             "text_01": "KIẾN TRÚC SƯ PHẦN MỀM & PHÁT TRIỂN FRONT_END.",
             "text_02": "Đam mê sáng tạo các trải nghiệm web đáp ứng và tương tác.",
-            "text_03": "Tớ xây dựng các trải nghiệm kỹ thuật số hoàn hảo, hấp dẫn và dễ truy cập.",
+            "text_03": "Tớ xây dựng các trải nghiệm UI/UX hoàn hảo, hấp dẫn và dễ truy cập.",
             "text_04": "Thành thạo HTML, CSS, JavaScript/Typescript và các framework front_end hiện đại như NextJS.",
             "text_05": "Kinh nghiệm xây dựng giao diện thân thiện với người dùng và tối ưu hóa hiệu suất web."
           },
@@ -39,7 +39,7 @@
         "experiences": {
           "header": "Kinh nghiệm chuyên môn",
           "label": "Kinh nghiệm",
-          "experexperiencestises_blocks": {
+          "experiences_blocks": {
             "block_01": {
               "content_overview": "Xây dựng và duy trì các thành phần quan trọng được sử dụng để xây dựng giao diện người dùng của Pluxee, trên toàn bộ sản phẩm. Làm việc chặt chẽ với các nhóm chức năng, bao gồm các nhà phát triển và thiết kế, để triển khai và ủng hộ các thực tiễn tốt nhất về khả năng truy cập web.",
               "meta": {

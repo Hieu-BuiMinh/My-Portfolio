@@ -9,8 +9,12 @@ import {
 	RiTwitterXFill,
 } from '@remixicon/react'
 import DownLoadCVButton from '../download-cv-button'
+import { Alignment, Fit, Layout, useRive } from '@rive-app/react-canvas'
+import { useTranslation } from 'react-i18next'
 
 function ContactModalContent() {
+	const { t } = useTranslation()
+
 	const socialNextwork = [
 		{ icon: <RiGithubFill size={20} color="var(--color-link-badge)" />, href: 'https://github.com/Hieu-BuiMinh' },
 		{
@@ -24,8 +28,19 @@ function ContactModalContent() {
 		},
 	]
 
+	const { RiveComponent } = useRive({
+		src: '/assets/riv/tentacles.riv',
+		stateMachines: ['State Machine 1'],
+		artboard: 'monstertentacle',
+		layout: new Layout({
+			fit: Fit.Contain,
+			alignment: Alignment.Center,
+		}),
+		autoplay: true,
+	})
+
 	return (
-		<div className="h-96 flex flex-col gap-5">
+		<div className="min-h-96 flex flex-col gap-5">
 			<Paper shadow="sm" withBorder p={'sm'} classNames={{ root: '!flex !flex-wrap items-end gap-3' }}>
 				<img
 					src="/assets/images/commons/avatar/avt_01.png"
@@ -81,7 +96,11 @@ function ContactModalContent() {
 				labelPosition="center"
 			/>
 
-			<DownLoadCVButton innerText="Get to know more about me!" />
+			<DownLoadCVButton innerText={t('commons.buttons.download_cv_btn_contact')} />
+
+			<div className="w-full h-[100px]">
+				<RiveComponent />
+			</div>
 		</div>
 	)
 }

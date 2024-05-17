@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 function AboutHeader() {
 	const { t } = useTranslation()
+	const { text_01, text_02, text_03, text_04, text_05 } = t('portfolio.sections.hello.typing_text')
 
 	return (
 		<div className="flex flex-col gap-10 text-center mt-10">
@@ -23,18 +24,7 @@ function AboutHeader() {
 			</span>
 
 			<TypeAnimation
-				sequence={[
-					`${t('portfolio.sections.hello.typing_text.text_01')}`,
-					1500,
-					`${t('portfolio.sections.hello.typing_text.text_02')}`,
-					1500,
-					`${t('portfolio.sections.hello.typing_text.text_03')}`,
-					1500,
-					`${t('portfolio.sections.hello.typing_text.text_04')}`,
-					1500,
-					`${t('portfolio.sections.hello.typing_text.text_05')}`,
-					1500,
-				]}
+				sequence={[text_01, 1500, text_02, 1500, text_03, 1500, text_04, 1500, text_05, 1500]}
 				wrapper="span"
 				speed={50}
 				style={{
@@ -50,8 +40,7 @@ function AboutHeader() {
 			/>
 
 			<p className="max-sm:text-xs max-md:text-base max-sm:leading-7">
-				I'm a software engineer specializing in building (and occasionally designing) exceptional digital
-				experiences. Currently, I'm focused on building accessible products.
+				{t('portfolio.sections.hello.short_intro')}
 			</p>
 		</div>
 	)
