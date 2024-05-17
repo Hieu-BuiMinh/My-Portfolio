@@ -17,12 +17,12 @@ function FloatingMenuBottom() {
 				</Menu.Target>
 
 				<Menu.Dropdown>
-					<Menu.Label>{t('commons.buttons.floating-btn-setting.language')}</Menu.Label>
+					<Menu.Label>{t('commons.buttons.floating_btn_setting.language')}</Menu.Label>
 					<Menu.Item>
 						<LanguageSegment />
 					</Menu.Item>
 					<Menu.Divider></Menu.Divider>
-					<Menu.Label>{t('commons.buttons.floating-btn-setting.seasons')}</Menu.Label>
+					<Menu.Label>{t('commons.buttons.floating_btn_setting.seasons')}</Menu.Label>
 					<Menu.Item>
 						<SeasonSegment />
 					</Menu.Item>

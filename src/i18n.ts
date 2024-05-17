@@ -10,8 +10,9 @@ i18n.use(Backend)
 	.use(initReactI18next)
 	.use(LanguageDetector)
 	.init({
-		lng: 'en',
+		lng: localStorage.getItem('i18nextLng') ?? defaultNS,
 		debug: true,
+		returnObjects: true,
 		interpolation: {
 			escapeValue: false,
 		},
