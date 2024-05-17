@@ -11,7 +11,11 @@ import {
 	RiTailwindCssLine,
 } from '@remixicon/react'
 
-function ScrollingSkills() {
+interface IScrollingSkills {
+	autoScroll?: boolean
+}
+
+function ScrollingSkills({ autoScroll }: Readonly<IScrollingSkills>) {
 	const coreSkill = [
 		{ isNew: true, icon: <RiReactjsLine size={20} color="var(--color-surface-999)" />, lable: 'React JS' },
 		{ isNew: false, icon: <RiQuillPenLine size={20} color="var(--color-surface-999)" />, lable: 'AntD' },
@@ -40,11 +44,11 @@ function ScrollingSkills() {
 		{ isNew: false, icon: <RiCss3Line size={20} color="var(--color-surface-999)" />, lable: 'CSS-SASS' },
 	]
 
-	const skills = [...coreSkill, ...coreSkill, ...coreSkill]
+	const skills = [...coreSkill, ...coreSkill]
 
 	return (
 		<div className="skills-container">
-			<div className="skills">
+			<div className={`skills ${autoScroll ? 'auto-scrolling' : 'scroll-onrolling'}`}>
 				{skills.map((skill) => {
 					return (
 						<span className={`skill ${skill.isNew && 'new-skill'}`} key={randomId()}>
@@ -55,7 +59,7 @@ function ScrollingSkills() {
 					)
 				})}
 			</div>
-			<div className="skills">
+			<div className={`skills ${autoScroll && 'auto-scrolling'}`}>
 				{skills.map((skill) => {
 					return (
 						<span className={`skill ${skill.isNew && 'new-skill'}`} key={randomId()}>

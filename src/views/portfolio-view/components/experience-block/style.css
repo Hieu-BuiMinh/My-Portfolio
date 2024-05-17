@@ -4,6 +4,12 @@
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(1.5px);
 	-webkit-backdrop-filter: blur(1.5px);
+
+	animation: scale-fade-in linear;
+	animation-timeline: view();
+	animation-range: entry;
+	/* end away from top: 80vh, start away from the bottom: 0px */
+	/* animation-timeline: view(80vh 0); */
 }
 
 .glass-block.new {
