@@ -25,6 +25,13 @@
 
 .skills {
 	@apply py-3 flex-shrink-0 flex gap-3 justify-between;
+}
+
+.skills.scroll-onrolling {
+	animation: skillsScrolling linear;
+	animation-timeline: scroll(root);
+}
+.skills.auto-scrolling {
 	animation: skillsScrolling 60s linear infinite;
 }
 
@@ -39,7 +46,7 @@
 .new-skill {
 	@apply bg-gradient-to-r from-[#E13430] to-[#F08A01];
 	svg {
-		fill: #FFFFFF;
+		fill: #ffffff;
 	}
 }
 

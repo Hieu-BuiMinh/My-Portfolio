@@ -5,9 +5,11 @@ import FirePot from '../../components/fire-pot-rive'
 import { Expertises } from './data'
 import './style.css'
 import { useTranslation } from 'react-i18next'
+import { useResponsiveDevice } from 'src/hooks'
 
 function MyExpertise() {
 	const { t } = useTranslation()
+	const device = useResponsiveDevice()
 
 	return (
 		<div className="flex flex-col items-center gap-10 max-sm:gap-5">
@@ -21,7 +23,7 @@ function MyExpertise() {
 				</div>
 			</div>
 
-			<ScrollingSkills />
+			<ScrollingSkills autoScroll={device === 'desktop'} />
 
 			<div className="grid grid-cols-12 gap-5 w-full grid-flow-row-dense">
 				{Expertises().map((item) => {
