@@ -1,7 +1,7 @@
 import { Button, useComputedColorScheme } from '@mantine/core'
 import { RiDownloadCloud2Line } from '@remixicon/react'
 import confetti from 'canvas-confetti'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 import { useTranslation } from 'react-i18next'
 import { useResponsiveDevice } from 'src/hooks'
@@ -44,7 +44,7 @@ function DownLoadCVButton({ innerText }: Readonly<IDownLoadCVButton>) {
 		explodeConfetti()
 		setTimeout(() => {
 			setLoading(false)
-			toast.success(t('commons.toasts.thanks-for-download'), {
+			toast.success(t('commons.toasts.thanks_for_download'), {
 				style: {
 					background: 'var(--color-surface-999)',
 					color: 'var(--color-surface-100)',
