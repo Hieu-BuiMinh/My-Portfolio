@@ -1,6 +1,6 @@
 import { Badge, Spoiler } from '@mantine/core'
 import { randomId } from '@mantine/hooks'
-import { RiArrowUpSLine, RiLinkM, RiMoreLine } from '@remixicon/react'
+import { RiArrowUpSLine, RiLinkM } from '@remixicon/react'
 import { useResponsiveDevice } from 'src/hooks'
 import './style.css'
 

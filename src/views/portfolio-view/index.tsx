@@ -8,10 +8,8 @@ import './css/style.css'
 import ContactSection from './sections/contact'
 import MyExperience from './sections/experience'
 import MyExpertise from './sections/expertise'
-import { useTranslation } from 'react-i18next'
 
 function PorfolioView() {
-	const { t } = useTranslation()
 	const computedColorScheme = useComputedColorScheme()
 	const [style, setStyle] = useState({})
 

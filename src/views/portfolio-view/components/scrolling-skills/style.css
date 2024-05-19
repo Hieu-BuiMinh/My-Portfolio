@@ -12,6 +12,7 @@
 	background: var(--color-linear-gradient-skills-after);
 	z-index: 1;
 }
+
 .skills-container::before {
 	content: '';
 	position: absolute;
@@ -27,14 +28,6 @@
 	@apply py-3 flex-shrink-0 flex gap-3 justify-between;
 }
 
-.skills.scroll-onrolling {
-	animation: skillsScrolling linear;
-	animation-timeline: scroll(root);
-}
-.skills.auto-scrolling {
-	animation: skillsScrolling 60s linear infinite;
-}
-
 .skill {
 	@apply flex-shrink-0 p-2 flex gap-2 items-center bg-[var(--color-surface-100)] rounded-md cursor-default;
 	box-shadow:
@@ -45,6 +38,7 @@
 
 .new-skill {
 	@apply bg-gradient-to-r from-[#E13430] to-[#F08A01];
+
 	svg {
 		fill: #ffffff;
 	}
@@ -53,5 +47,18 @@
 @keyframes skillsScrolling {
 	to {
 		transform: translateX(-100%);
+	}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+	.skills.scroll-onrolling {
+		animation: skillsScrolling linear;
+		animation-timeline: scroll(root);
+	}
+
+	.skills.auto-scrolling {
+		animation: skillsScrolling 60s linear infinite;
 	}
 }
