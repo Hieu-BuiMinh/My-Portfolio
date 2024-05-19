@@ -1,13 +1,13 @@
 import { Avatar, Indicator, Menu, SegmentedControl } from '@mantine/core'
 import { randomId } from '@mantine/hooks'
 import { memo } from 'react'
-import { useResponsiveDevice } from 'src/hooks'
-import ToggleDarkModeBtn from 'src/components/button/toggle-darkmode'
 import DownLoadCVButton from 'src/components/button/download-cv-button'
+import ToggleDarkModeBtn from 'src/components/button/toggle-darkmode'
+import { useResponsiveDevice } from 'src/hooks'
 
-import './style.css'
 import { useTranslation } from 'react-i18next'
 import ContactButton from 'src/components/button/contact-button'
+import './style.css'
 
 interface ISegmentNav {
 	navData: { value: string; data: { label: React.ReactNode; value: string }[] }
@@ -70,14 +70,24 @@ function SegmentNav({ navData, handlesetNavData }: Readonly<ISegmentNav>) {
 				<SegmentedControl
 					className="segment-nav"
 					withItemsBorders={false}
-					radius="xl"
 					value={navData.value}
+					radius="xl"
 					data={navData.data.map((item) => {
-						return { ...item, label: t(item.label) }
+						return {
+							...item,
+							label: (
+								<a
+									className="flex"
+									href={`${item.value}`}
+									onClick={() => {
+										handlesetNavData(item.value)
+									}}
+								>
+									{t(item.label)}
+								</a>
+							),
+						}
 					})}
-					onChange={() => {
-						handlesetNavData(navData.value)
-					}}
 				/>
 			</div>
 

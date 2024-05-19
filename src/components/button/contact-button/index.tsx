@@ -1,4 +1,4 @@
-import { Button, Modal, useComputedColorScheme } from '@mantine/core'
+import { Modal } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import ContactModalContent from './contact-modal-content'
 
@@ -11,7 +11,9 @@ function ContactButton({ children }: Readonly<IContactButton>) {
 
 	return (
 		<>
-			<button onClick={open}>{children}</button>
+			<div className="flex items-center justify-center" onClick={open}>
+				{children}
+			</div>
 
 			<Modal opened={opened} withCloseButton={false} centered onClose={close}>
 				<ContactModalContent />

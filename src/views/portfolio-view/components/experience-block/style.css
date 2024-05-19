@@ -4,12 +4,6 @@
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(1.5px);
 	-webkit-backdrop-filter: blur(1.5px);
-
-	animation: scale-fade-in linear;
-	animation-timeline: view();
-	animation-range: entry;
-	/* end away from top: 80vh, start away from the bottom: 0px */
-	/* animation-timeline: view(80vh 0); */
 }
 
 .glass-block.new {
@@ -33,11 +27,13 @@
 .glass-content__header {
 	@apply font-semibold text-[var(--color-link-badge)];
 }
+
 .glass-content__overview {
 	@apply text-sm line-clamp-[10] max-sm:line-clamp-[5];
 }
 
-.glass-content__tech, .glass-content__urls {
+.glass-content__tech,
+.glass-content__urls {
 	@apply flex gap-2 flex-wrap;
 }
 
@@ -53,4 +49,15 @@
 	@apply absolute bg-[var(--color-surface-100)] z-[1] rounded-[5px];
 	content: '';
 	inset: 1px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.glass-block {
+
+		animation: scale-fade-in linear;
+		animation-timeline: view();
+		animation-range: entry;
+		/* end away from top: 80vh, start away from the bottom: 0px */
+		/* animation-timeline: view(80vh 0); */
+	}
 }
