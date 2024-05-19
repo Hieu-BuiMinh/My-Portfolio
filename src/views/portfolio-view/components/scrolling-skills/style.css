@@ -55,7 +55,7 @@
 
 	.skills.scroll-onrolling {
 		animation: skillsScrolling linear;
-		animation-timeline: scroll(root);
+		animation-timeline: scroll(root) !important;
 	}
 
 	.skills.auto-scrolling {
