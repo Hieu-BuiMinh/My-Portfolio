@@ -56,7 +56,7 @@
 
 		animation: scale-fade-in linear;
 		animation-timeline: view() !important;
-		animation-range: entry;
+		animation-range: entry !important;
 		/* end away from top: 80vh, start away from the bottom: 0px */
 		/* animation-timeline: view(80vh 0); */
 	}
