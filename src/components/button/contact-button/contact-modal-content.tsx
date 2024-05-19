@@ -86,7 +86,7 @@ function ContactModalContent() {
 					<div className="flex flex-wrap gap-5 items-center justify-center">
 						{socialNextwork.map((item) => {
 							return (
-								<a key={randomId()} href={item.href} className="p-1">
+								<a key={randomId()} href={item.href} className="p-1" target="_blank">
 									{item.icon}
 								</a>
 							)
