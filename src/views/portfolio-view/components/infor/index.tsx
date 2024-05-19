@@ -24,7 +24,12 @@ function SideInfor() {
 				<div className="flex flex-col gap-5">
 					{socialNextwork.map((item) => {
 						return (
-							<a key={randomId()} href={item.href} className="hover:-translate-y-2 transition">
+							<a
+								key={randomId()}
+								href={item.href}
+								className="hover:-translate-y-2 transition"
+								target="_blank"
+							>
 								{item.icon}
 							</a>
 						)
